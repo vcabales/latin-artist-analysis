@@ -1,0 +1,145 @@
+/*!
+ * Start Bootstrap - Heroic Features (https://startbootstrap.com/template-overviews/heroic-features)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-heroic-features/blob/master/LICENSE)
+ */
+
+body {
+  margin: 0;
+  top: 0;
+  padding-top: 0;
+}
+
+.card {
+  height: 100%;
+}
+
+.caption {
+  text-align: justify;
+}
+
+.cover {
+  background: url('http://placehold.it/1920x1080') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+#coverCaption {
+  padding-top: 20em;
+  padding-left: 3em;
+}
+
+#headline {
+  padding-bottom: 25px;
+}
+
+.article-text {
+  padding-right: 15em;
+  text-align: justify;
+}
+
+.col-lg-3 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.col-md-6 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.mb-4 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.card-hover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(29, 106, 154, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .2s, visibility .2s;
+}
+
+.card:hover .card-hover {
+  visibility: visible;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#coverCaption {
+  width: 80%;
+}
+
+blockquote {
+   width: 100%;
+   max-width:1170px;
+   margin: 30px auto;
+   box-sizing: border-box;
+   padding: 10px 10px 10px 50px;
+   border-left:8px solid #1abc9c;
+   border-right: 3px solid #1abc9c;
+   box-shadow: 2px 2px 15px #ccc;
+   position: relative;
+   color: #2c3e50;
+   line-height: 1.3em;
+   text-align: justify;
+   font-family: "Georgia";
+}
+
+blockquote:before {
+   content: "\201C";
+   font-size: 30px;
+   position: absolute;
+   font-size: 60px;
+   font-weight: bold;
+   color: #757575;
+   left:10px;
+   top:26px;
+}
