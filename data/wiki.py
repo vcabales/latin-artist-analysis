@@ -86,6 +86,15 @@ print latin_year_totals # Artist and number of songs that made it to Spotify Top
 print latin_year_counts # Number of Latin artists that placed in a given year
 print artist_year_songs # Artist and their songs for the year they placed
 
+all_artists = set()
+for k,v in latin_year_totals.items():
+    all_artists.update(v.keys())
+
+for k,v in latin_year_totals.items():
+    for artist in all_artists:
+        if artist not in v.keys():
+            v[artist] = 0
+
 with open('artists_totals.json','w') as f:
     json.dump(latin_year_totals,f,indent=4,sort_keys=True)
 f.close()

@@ -21,20 +21,30 @@ var border = chart.append('rect')
     .style('stroke-width', borderWidth)
     .style('shape-rendering', 'crispEdges')
 
-load('sample1.csv');
+// load('sample1.csv');
 loadJSON('artists_totals.json')
 
 function loadJSON(name) {
     d3.text(name, function(JSONdata) {
-        console.log(JSONdata);
         var rawData = JSON.parse(JSONdata);
-        console.log(rawData);
-        var labelsX = null;
+        var labelsX = [];
         var data = [];
+        var vals = [];
+        var valLen = [];
+
         for (x in rawData) {
-          console.log(x);
-          console.log(rawData[x]);
+          currVals = []
+          for (y in rawData[x]) {
+            // console.log(y);
+            // console.log(rawData[x][y]);
+            currVals.push({key: y, value: rawData[x][y]});
+            vals.push(rawData[x][y]);
+          }
+          valLen.push(currVals.length);
+          data.push({key: x, value: currVals})
         }
+        console.log(Math.max.apply(null,valLen));
+        updateJSON(data, labelsX, vals, valLen);
     })
 }
 
@@ -61,18 +71,81 @@ function load(name) {
           })
 
         })
-
+        // console.log(data);
         update(data, labelsX)
     })
 }
 
+function updateJSON(data, labelsX, vals, valLen) {
+    console.log(data);
+    var maxWidth = Math.max.apply(null,valLen);
+    var maxR = d3.min([(width - yLabelWidth) / maxWidth, (height - xLabelHeight) / data.length]) / 2;
+
+    var r = function(d) { // Function to calculate the radii
+      console.log(d);
+      if (d === 0) return 0
+
+      f = d3.scale.sqrt()
+          .domain([d3.min(vals), d3.max(vals)])
+          .rangeRound([2, maxR - padding])
+
+      return f(d)
+    }
+
+    var c = d3.scale.linear()
+        .domain([d3.min(vals), d3.max(vals)])
+        .rangeRound([255 * 0.8, 0])
+
+    var rows = chart.selectAll('.row') // Rows would be all the years
+        .data(data, function(d){ return d.key })
+
+    rows.enter().append('g')
+        .attr('class', 'row')
+
+    rows.exit()
+        .transition()
+        .duration(duration)
+        .style('fill-opacity', 0)
+        .remove()
+
+    rows.transition()
+        .duration(duration)
+        .attr('transform', function(d, i) { console.log(d); console.log(i); return 'translate(' + yLabelWidth + ',' + (maxR * i * 2 + maxR + xLabelHeight) + ')' })
+
+    var dots = rows.selectAll('circle') // Make some circles
+        .data(function(d) {return d.value.map(d=>d.value)});
+
+        dots.enter().append('circle')
+            .attr('cy', 0)
+            .attr('r', 0)
+            .style('fill', '#ffffff')
+            .text(function(d){ return d })
+
+        dots.exit()
+            .transition()
+            .duration(duration)
+            .attr('r', 0)
+            .remove()
+
+        dots.transition()
+            .duration(duration)
+            .attr('r', function(d){ console.log(d); return r(d) })
+            .attr('cx', function(d, i){ return i * maxR * 2 + maxR })
+            .style('fill', function(d){ return 'rgb(' + c(d) + ',' + c(d) + ',' + c(d) + ')' })
+
+        
+}
+
 function update(data, labelsX) {
 
-    var allValues = Array.prototype.concat.apply([], data.map(function(d) { return d.values }))
-    var maxWidth = d3.max(data.map(function(d) { return d.values.length }))
+    console.log(data);
+    var allValues = Array.prototype.concat.apply([], data.map(function(d) { return d.values })) // List of all numerical values
+    var maxWidth = d3.max(data.map(function(d) { console.log(d); return d.values.length}))
     var maxR = d3.min([(width - yLabelWidth) / maxWidth, (height - xLabelHeight) / data.length]) / 2
 
-    var r = function(d) {
+
+    var r = function(d) { // Function to calculate the radii
+      console.log(d);
       if (d === 0) return 0
 
       f = d3.scale.sqrt()
@@ -100,8 +173,9 @@ function update(data, labelsX) {
 
     rows.transition()
         .duration(duration)
-        .attr('transform', function(d, i){ return 'translate(' + yLabelWidth + ',' + (maxR * i * 2 + maxR + xLabelHeight) + ')' })
+        .attr('transform', function(d, i){ console.log(d); console.log(i); return 'translate(' + yLabelWidth + ',' + (maxR * i * 2 + maxR + xLabelHeight) + ')' })
 
+    console.log(data.values);
     var dots = rows.selectAll('circle')
         .data(function(d){ return d.values })
 
@@ -205,58 +279,58 @@ function update(data, labelsX) {
         .attr('y', function(d, i){ return maxR * i * 2 + maxR + xLabelHeight })
         .attr('transform', 'translate(-6,' + maxR / 2.5 + ')')
         .style('fill-opacity', 1)
-
-    var vert = chart.selectAll('.vert')
-        .data(labelsX)
-
-    vert.enter().append('line')
-        .attr('class', 'vert')
-        .attr('y1', xLabelHeight + borderWidth / 2)
-        .attr('stroke', '#888')
-        .attr('stroke-width', 1)
-        .style('shape-rendering', 'crispEdges')
-        .style('stroke-opacity', 0)
-
-    vert.exit()
-        .transition()
-        .duration(duration)
-        .style('stroke-opacity', 0)
-        .remove()
-
-    vert.transition()
-        .duration(duration)
-        .attr('x1', function(d, i){ return maxR * i * 2 + yLabelWidth })
-        .attr('x2', function(d, i){ return maxR * i * 2 + yLabelWidth })
-        .attr('y2', maxR * 2 * data.length + xLabelHeight - borderWidth / 2)
-        .style('stroke-opacity', function(d, i){ return i ? 1 : 0 })
-
-    var horiz = chart.selectAll('.horiz').
-        data(data, function(d){ return d.label })
-
-    horiz.enter().append('line')
-        .attr('class', 'horiz')
-        .attr('x1', yLabelWidth + borderWidth / 2)
-        .attr('stroke', '#888')
-        .attr('stroke-width', 1)
-        .style('shape-rendering', 'crispEdges')
-        .style('stroke-opacity', 0)
-
-    horiz.exit()
-        .transition()
-        .duration(duration)
-        .style('stroke-opacity', 0)
-        .remove()
-
-    horiz.transition()
-        .duration(duration)
-        .attr('x2', maxR * 2 * labelsX.length + yLabelWidth - borderWidth / 2)
-        .attr('y1', function(d, i){ return i * maxR * 2 + xLabelHeight })
-        .attr('y2', function(d, i){ return i * maxR * 2 + xLabelHeight })
-        .style('stroke-opacity', function(d, i){ return i ? 1 : 0 })
-
-    border.transition()
-        .duration(duration)
-        .attr('width', maxR * 2 * labelsX.length)
-        .attr('height', maxR * 2 * data.length)
+    //
+    // var vert = chart.selectAll('.vert')
+    //     .data(labelsX)
+    //
+    // vert.enter().append('line')
+    //     .attr('class', 'vert')
+    //     .attr('y1', xLabelHeight + borderWidth / 2)
+    //     .attr('stroke', '#888')
+    //     .attr('stroke-width', 1)
+    //     .style('shape-rendering', 'crispEdges')
+    //     .style('stroke-opacity', 0)
+    //
+    // vert.exit()
+    //     .transition()
+    //     .duration(duration)
+    //     .style('stroke-opacity', 0)
+    //     .remove()
+    //
+    // vert.transition()
+    //     .duration(duration)
+    //     .attr('x1', function(d, i){ return maxR * i * 2 + yLabelWidth })
+    //     .attr('x2', function(d, i){ return maxR * i * 2 + yLabelWidth })
+    //     .attr('y2', maxR * 2 * data.length + xLabelHeight - borderWidth / 2)
+    //     .style('stroke-opacity', function(d, i){ return i ? 1 : 0 })
+    //
+    // var horiz = chart.selectAll('.horiz').
+    //     data(data, function(d){ return d.label })
+    //
+    // horiz.enter().append('line')
+    //     .attr('class', 'horiz')
+    //     .attr('x1', yLabelWidth + borderWidth / 2)
+    //     .attr('stroke', '#888')
+    //     .attr('stroke-width', 1)
+    //     .style('shape-rendering', 'crispEdges')
+    //     .style('stroke-opacity', 0)
+    //
+    // horiz.exit()
+    //     .transition()
+    //     .duration(duration)
+    //     .style('stroke-opacity', 0)
+    //     .remove()
+    //
+    // horiz.transition()
+    //     .duration(duration)
+    //     .attr('x2', maxR * 2 * labelsX.length + yLabelWidth - borderWidth / 2)
+    //     .attr('y1', function(d, i){ return i * maxR * 2 + xLabelHeight })
+    //     .attr('y2', function(d, i){ return i * maxR * 2 + xLabelHeight })
+    //     .style('stroke-opacity', function(d, i){ return i ? 1 : 0 })
+    //
+    // border.transition()
+    //     .duration(duration)
+    //     .attr('width', maxR * 2 * labelsX.length)
+    //     .attr('height', maxR * 2 * data.length)
 
 }
