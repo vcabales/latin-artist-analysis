@@ -2,7 +2,7 @@ from spotipy.oauth2 import SpotifyClientCredentials
 import spotipy
 import json
 
-client_credentials_manager = SpotifyClientCredentials('cd4ac13e29424c56a38e09f386ba2358','ea5f2c7c6f39496789904f78babec19a')
+client_credentials_manager = SpotifyClientCredentials('your key here','your token here')
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 
 uri = 'spotify:user:spotifycharts:playlist:37i9dQZEVXbJiZcmkrIHGU'
