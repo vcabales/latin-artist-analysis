@@ -7,6 +7,8 @@ var yLabelWidth = 80
 var borderWidth = 3
 var duration = 500
 
+console.log("loading d3 file");
+
 var chart = d3.select('#chart').append('svg')
     .attr('width', width + margin.left + margin.right)
     .attr('height', height + margin.top + margin.bottom)
@@ -21,7 +23,7 @@ var border = chart.append('rect')
     .style('stroke-width', borderWidth)
     .style('shape-rendering', 'crispEdges')
 
-loadJSON('artists_totals.json')
+loadJSON('./artists_totals.json')
 
 function loadJSON(name) {
     d3.text(name, function(JSONdata) {

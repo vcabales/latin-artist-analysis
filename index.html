@@ -2,7 +2,6 @@
 <html lang="en">
 
   <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -13,7 +12,8 @@
 
     <!-- Custom styles for this template -->
     <link href="css/heroic-features.css" rel="stylesheet">
-    <script src="./custom.js"></script>
+    <script src="custom.js"></script>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
 
   </head>
 
@@ -28,7 +28,8 @@
 
     <!-- Page Content -->
     <div class="container">
-      <h1 class="header-text">Latin Indie-Pop with a Chicago Twist</h1>
+      <h1>The Rise of Chicago's Latin DIY Music Scene</h1>
+      <p class="article-text" id="byline"><em>By Victoria Cabales, Andres Correa, Anna White, and Courtney Zhu</em></p>
       <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       <p class="article-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
       <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -43,7 +44,7 @@
       <div class="row text-center modalHolder">
         <div class="col-lg-3 col-md-6 mb-4 first-card">
           <div class="card" id="artist1" onclick="openModal(this.id)">
-            <img class="card-img-top" src="http://placehold.it/500x500" alt="">
+            <img class="card-img-top" src="img/dos_santos_insta.png" alt="dos-santos">
             <div class="card-hover">
               <h4 class="card-title">Dos Santos</h4>
               <!-- <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p> -->
@@ -53,7 +54,7 @@
 
         <div class="col-lg-3 col-md-6 mb-4">
           <div class="card" id="artist2" onclick="openModal(this.id)">
-            <img class="card-img-top" src="http://placehold.it/500x500" alt="">
+            <img class="card-img-top" src="img/tatiana_siono.jpeg" alt="tatiana-hazel">
             <div class="card-hover">
               <h4 class="card-title">Tatiana Hazel</h4>
               <!-- <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p> -->
@@ -65,7 +66,7 @@
       <div class="row text-center modalHolder">
         <div class="col-lg-3 col-md-6 mb-4 first-card">
           <div class="card" id="artist3" onclick="openModal(this.id)">
-            <img class="card-img-top" src="http://placehold.it/500x500" alt="">
+            <img class="card-img-top" src="img/kaina_insta.png" alt="kaina">
             <div class="card-hover">
               <h4 class="card-title">KAINA</h4>
               <!-- <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p> -->
@@ -75,7 +76,7 @@
 
         <div class="col-lg-3 col-md-6 mb-4">
           <div class="card" id="artist4" onclick="openModal(this.id)">
-            <img class="card-img-top" src="http://placehold.it/500x500" alt="">
+            <img class="card-img-top" src="img/victor.jpg" alt="victor!">
             <div class="card-hover">
               <h4 class="card-title">VICTOR!</h4>
               <!-- <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p> -->
@@ -87,10 +88,21 @@
     <div class="modal" id="modal1">
       <div class="modal-content">
         <span class="close" onclick="closeModal()">&times;</span>
-        <h1> Lorem ipsum dolor sit amet</h1>
-        <p>Some text in the Modal 1 .. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h1>Dos Santos</h1>
+        <p>Dos Santos is a Chicago-based quintet, applauded for their mixing of diverse styles from cumbia, salsa, classic rock to jazz. The five members – Peter Vale, Alex Chavez, Daniel Villarreal-Carrillo, Jaime Garza, Nathan Karagianis – each have their own storied backgrounds in music.</p>
+        <p>The group made their first debut in May 2013, after Chavez (lead vocalist of Dos Santos) came to Chicago from Texas and found that there was a void of cumbia being performed. On November 10, 2013, Jasmine Garsd published a piece in NPR Music’s alt.latino titled “Cumbia: The Musical Backbone of Latin America,” stating that, “These vertebrae, aligned in a 2/4 beat, had always been there; they were hard and unmovable. Cumbia. And something else I wouldn't be able to define until I left my country: Latinidad. Latin-ness.”</p>
+        <p>Peter Vale is a Puerto Rican percussionist, born and raised in Chicago. He plays percussion for Dos Santos and said a lot of their music is borrowed from the genre Chicha Peruana, a Cumbia style that was famous in Peru in the 60s and 70s. </p>
+        <p>Vale said the music of Dos Santos has a “psychedelic groove” to it. But he emphasizes that they like mixing various styles of music that hold significance in their lives.</p>
+        <p>“It becomes more than just let’s write a song. It’s more of let’s put a each of us into this song. We each have that freedom, and it’s a very democratic process of writing that music,” Vale said. “That’s going to show – it already did in LOGOS. You have a lot of influences of various types of music, like me bringing sounds from La Rumba, Guaguanco, Salsa, Mo-Sambique and Congo.”</p>
+        <p>Beyond blending a range of styles, the music they create is bilingual – more specifically, Spanglish – because that is the language that is most natural to them.</p>
+        <p>“When Alex dropped the lyrics to ‘Return y Regreso,’ we didn’t even flinch to his lyrics and the fact that they were in English,” Vale said. “It was only when an interviewer pointed that out, which made me realize, ‘Woah that’s true! We have something in English!’ Other artists and bands are bilingual too. Down to the DJs who will play a Boogaloo (bugalú) song in English, it was an infectious latin beat with English lyrics over the top. That kind of music is representative of Spanglish.”</p>
+        <p>“It’s us and our own language. At home, I talked in Español, en casa, and English. There’s people that I know who will talk Spanglish to anybody, whether they know Spanish or not.”</p>
+        <p>Vale said the Spanglish language is part of his latin identity, as well as the Latin identity of Dos Santos, and so is his accent. </p>
+        <p>“When I listen to Hotel California from The Eagles, I am listening to them with Latino ears. When I hear something by Michael MacDonald and want to do my own cover, it would have my own accent,” Vale said. “Being Latino, no matter what you do, is going to be perceived as having an accent. It’s about how well you’re going to embrace that. I embrace it fully. My music has an accent, and I am proud of that.”</p>
+        <p>Growing up, Vale grew up in a household that played a range of genres. His mother owned an extensive vinyl collection, and he recalls listening to a lot of classic rock, like Michael MacDonald and the Doobie Brothers, The Eagles and Kenny Loggins. Then there was also a lot of Salsa like Frankie Ruiz.</p>
+        <p>“My mom put on these records, so I didn’t have a choice in what we were listening to. It definitely shaped what I enjoy listening to,” Vale said. “But the older Salsa recordings from the 70s that we would listen to – mom would grab me and we’d start dancing in the living room. When you listen to music and you associate it to some kind of moment, like dancing with mom in the living room, how can you not fall in love with that music?”</p>
+        <p>Vale said that he and the four other members of Dos Santos have become a family. Dos Santos has gained prominence in Chicago’s live music venues and festivals, such as the Park Summer Music Series and the Chicago World Music Festival. Peter Margasak of the Chicago Reader wrote in March 2015, "It seems only a matter of time before the combo becomes a key player on the country’s world-music circuit."</p>
+        <p>Since then, the band released an EP in 2016 entitled “Fonografic” on Electric Cowbell Records produced by Beto Martínez of Grammy Award-winning Grupo Fantasma. Then in Summer 2017, the band composed “Logos,” their International Anthem debut. </p>
       </div>
     </div>
 
@@ -122,19 +134,26 @@
   <div class="container">
     <h1>Sed ut perspiciatis unde omnis iste natus </h1>
     <p class="article-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-
     <!-- <blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <p></blockquote>
     <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p> -->
   </div> <!-- /.container -->
+
+  <div id="chartContainer">
+    <div id="chart"></div>
+  </div>
+  
+  <div class="container">
+    <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </div>
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
+    <script src="main.js"></script>
   </body>
   <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2018</p>
+      <p class="m-0 text-center text-white">Information about methodology<br/>Specify who did what</p>
     </div>
     <!-- /.container -->
   </footer>
