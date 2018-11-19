@@ -32,7 +32,7 @@ function loadJSON(name) {
         var valLen = [];
 
         for (x in rawData) {
-          currVals = []
+          var currVals = []
           for (y in rawData[x]) {
             currVals.push({key: y, value: rawData[x][y]});
             vals.push(rawData[x][y]);
@@ -41,13 +41,11 @@ function loadJSON(name) {
           valLen.push(currVals.length);
           data.push({key: x, value: currVals})
         }
-        console.log(Math.max.apply(null,valLen));
         updateJSON(data, labelsX, vals, valLen);
     })
 }
 
 function updateJSON(data, labelsX, vals, valLen) {
-    console.log(labelsX);
     vals = vals.map(n => n*0.7);
     var maxWidth = Math.max.apply(null,valLen);
     var maxR = d3.min([(width - yLabelWidth) / maxWidth, (height - xLabelHeight) / data.length]) / 2;
