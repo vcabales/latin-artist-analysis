@@ -142,15 +142,15 @@ function updateJSON(data, labelsX, vals, valLen) {
         var circleEnter = dots.enter()
 
         circleEnter.append('circle')
-            .attr('fill', function(d) {
-              var i = Math.floor(count/24);
-              console.log(Math.floor(count/24));
-              console.log("#"+artists[data[i].value[count - 24*i].key]); // Get artist name
-              count++;
-              return "url(#"+artists[data[i].value[count-1 - 24*i].key]+")"
-
-              // return data[i].value[count-1 - 24*i].value.img; // Should align to correct images
-            })
+            // .attr('fill', function(d) {
+            //   var i = Math.floor(count/24);
+            //   console.log(Math.floor(count/24));
+            //   console.log("#"+artists[data[i].value[count - 24*i].key]); // Get artist name
+            //   count++;
+            //   return "url(#"+artists[data[i].value[count-1 - 24*i].key]+")"
+            //
+            //   // return data[i].value[count-1 - 24*i].value.img; // Should align to correct images
+            // })
         //     .attr('cy', 0)
         //     .attr('cx', 0)
         //     // .attr('size',10)
@@ -169,7 +169,7 @@ function updateJSON(data, labelsX, vals, valLen) {
         dots.exit()
             .transition()
             .duration(duration)
-            // .attr('r', 0)
+            .attr('r', 0)
             .remove()
 
         // var imgs = rows.selectAll('circle')
@@ -205,7 +205,15 @@ function updateJSON(data, labelsX, vals, valLen) {
             .duration(duration)
             .attr('r', function(d){ return r(d) })
             .attr('cx', function(d, i){ return i * maxR * 2 + maxR })
-            // .style('fill', function(d){ return 'rgb(' + c(d) + ',' + c(d) + ',' + c(d) + ')' })
+            .style('fill', function(d) {
+              var i = Math.floor(count/24);
+              console.log(Math.floor(count/24));
+              console.log("#"+artists[data[i].value[count - 24*i].key]); // Get artist name
+              count++;
+              return "url(#"+artists[data[i].value[count-1 - 24*i].key]+")"
+
+              // return data[i].value[count-1 - 24*i].value.img; // Should align to correct images
+            })
 
         var dotLabels = rows.selectAll('.dot-label')
             .data(function(d){return d.value.map(d=>(d.key,d.value))});
