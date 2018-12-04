@@ -26,20 +26,79 @@
         </div>
       </div>
     </div>
+    <p class="caption e-caption"><em>Dos Santos, an up and coming Latinx band based in Chicago</em></p>
 
     <!-- Page Content -->
-    <div class="container">
+    <div class="container" id="c1">
       <h1>The Rise of Chicago's Latin DIY Music Scene</h1>
-      <p class="article-text" id="byline"><em>By Victoria Cabales, Andres Correa, Anna White, and Courtney Zhu</em></p>
-      <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      <p class="article-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-      <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <button class="btn-group-toggle" data-toggle="buttons" onclick="readEnglish()">
+        <label class="btn btn-secondary active">
+          <input type="checkbox" checked autocomplete="off"> Read in English
+        </label>
+      </button>
+      <button class="btn-group-toggle" data-toggle="buttons" onclick="readSpanish()">
+        <label class="btn btn-secondary active">
+          <input type="checkbox" checked autocomplete="off"> Read in Spanish
+        </label>
+      </button>
+      <div class="englishDiv" id="ed1">
+        <p class="article-text"><em>By Victoria Cabales, Andres Correa, Anna White, and Courtney Zhu</em></p>
+        <p class="article-text">On the Friday eve before Halloween, Kimberly Lopez and Lupe Arrieta wait in the 20-person line outside of East Room in Chicago’s Logan Square for Pachanga, a monthly dance party showcasing local Latino artists across all genres. </p>
+        <p class="article-text">“A lot of people have been here. They keep saying, ‘Oh, you should come.’ Specifically, Pachanga night. Everyone says Pachanga Night is the one to come,” say Lopez. Familiar with popular reggaeton artists such as Ozuna, the pair are excited about a night of Latin music, despite not knowing the specific work of any of the DJs performing at this night’s Pachanga.</p>
+        <p class="article-text">Inside the low-lit, cash-only venue, people danced to Drake’s voice playing over the cumbia beats. Others waited in line to get their face painted, Calavera-style, a decorative skull rooted in the Mexican tradition of El Día De Los Muertos, or The Day of The Dead.  In the bar area, people showcase their elaborate costumes as they wait for the drink of the night, La Llorona, the East Room’s rendition of the classic Paloma. Plastered on the walls were posters promoting the November 3rd event, Xicago: a Redbull-sponsored event showcasing a range of Chicago-based Latin artists.</p>
+        <p class="article-text">Since the rise of major hits like Luis Fonsi and Daddy Yankee’s “Despacito” and J Balvin’s “Mi Gente”, Latin music has established a stronger foothold in the American music mainstream. In 2017, a total of 19 Latin tracks placed on Billboard’s chart compared to only four Spanish songs in 2016 and three in 2015.</p>
+      </div>
+
+      <div class="spanishDiv" id="sd1">
+        <p class="article-text"><em>Por Victoria Cabales, Andres Correa, Anna White, and Courtney Zhu</em></p>
+        <p class="article-text">El viernes antes de Halloween, Kimberly López y Lupe Arrieta esperan en la línea de 20 personas afuera de The East Room en Logan Square para Pachanga, una fiesta de baile mensual que muestra artistas latinos locales de todos los géneros.</p>
+        <p class="article-text">“Mucha gente ha estado aquí. Siguen diciendo: 'Oh, deberías venir'. Específicamente, la noche de Pachanga. Todos dicen que la Noche de Pachanga es la que está por venir ", dice López.  Como fans de  los artistas populares del reggaeton como Ozuna, los dos están entusiasmados con una noche de música latina, a pesar de no saber la musica específico de ninguno de los DJ que se presentan en la Pachanga de esta noche.</p>
+        <p class="article-text">Dentro del lugar de atenuadas que solo tomó dinero en efectivo,  la gente bailaba con la voz de Drake tocaba sobre los ritmos de la cumbia. Otros esperaban en fila para pintarse la cara, al estilo de Calavera, un cráneo decorativo enraizado en la tradición mexicana de El Día de los Muertos, o El Día de los Muertos. En la zona del bar, la gente mostraba sus disfraces mientras esperan la bebida de la noche, La Llorona, la interpretación de la Paloma clásica del East Room. Pegados en las paredes había carteles de promocionar para el evento del 3 de noviembre, Xicago: un evento patrocinado por Redbull que muestra una gama de artistas latinos de Chicago.</p>
+      </div>
       <!-- Page Features -->
 
     </div> <!-- End Container -->
-    <div class="parallax"></div>
+
+    <div class="parallax" id="placeholder">
+      <div class="parallaxRow">
+        <h1 class="parallaxCaption">Pachanga night, a weekly reggaeton event held in Logan Square</h1>
+      </div>
+    </div>
+
+    <div class="parallax" style="display:none">
+      <div id="chartContainer">
+        <div id="chart"></div>
+      </div>
+    </div>
+
     <div class="container">
-      <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+      <div class="englishDiv" id="ed2">
+        <p class="article-text">This is not the only way the music industry is evolving: popular streaming platforms like Spotify, SoundCloud and YouTube have allowed independent artists to more readily share their music, reaching listeners from all over the world. As of September 2018, Spotify began allowing artists to upload their music directly and bypass traditional digital distributors. For Latin indie artists, they now have more agency to embrace their identity and unique sound, without pressure to conform to the mainstream. For them, music is an avenue by which they can explore the intersection of their Latin heritage and their American upbringing.</p>
+        <p class="article-text">Part of Chicago’s growing DIY music scene, four artists tell the stories of their “in-betweenness” as U.S. born Latinos: mixing music styles across cultures, singing in Spanglish and balancing the duality of their Latin-American identities.</p>
+        <p class="article-text">Xicago was a celebration of local Latinx artists in Chicago. The event was one of many events thrown by Redbull’s Music Festival across Chicago. The artists showcased are pioneers in combining both their Latin and American influences into their music.</p>
+        <p class="article-text">Inside the brick walls of what used to be a warehouse, Spanish, English and Spanglish bounced from one end to the other. Above the bar, colorful plastic pinwheels were hung upside down, leaving observers in a trance. Scattered across the two-stage venue were local Latinx owned business selling tacos de lengua and carne asada, empanadas, paletas, plants and clothing.  </p>
+        <p class="article-text">Social media is a crucial part of this changing landscape. Chicago-based artist Victor Cervantes, aka VICTOR!, grew up with the Internet boom and said, “Now, people don’t have to wait for you at shows to meet you in person. You can just go on [Instagram] Live and say hi,” said Cervantes.</p>
+        <p class="article-text">Cervantes is candid on Instagram, posting anything from fleeting thoughts, childhood memories to pictures of himself cuddling dogs. It is a platform his followers can get to know not just his music as VICTOR!, but who he is: a first-generation Latino 18-year-old. </p>
+        <p class="article-text">Cervantes is one of many Latinx artists taking part in Chicago’s rapidly evolving DIY music scene.</p>
+      </div>
+      <div class="spanishDiv" id="sd2">
+        <p class="article-text">Más y más estadounidenses están familiarizándose con música como el reguetón por el éxito de artistas latinos en la música convencional. Desde el auge de canciones como “Despacito” de Luis Fonsi y Daddy Yankee y “Mi Gente” por J Balvin, la música latina se ha afianzado en la industria musical. En 2017, 19 canciones latinas se clasificaron en Billboard Hot 100, en comparación con solamente cuatro en 2016 y tres en 2015.</p>
+        <p class="article-text">No obstante, este auge no es la única manera en que la industria musical está desarrollándose: las plataformas de streaming como Spotify, SoundCloud y Youtube han creado un espacio donde los artistas independientes pueden compartir su música con el resto del mundo. A partir de septiembre de 2018, Spotify comenzó a permitir a los artistas independientes subir su música directamente a la plataforma y pasar por encima de los sellos discográficos tradicionales. Los artistas latinos independientes ahora tienen más poder para abrazar sus identidades como latinoamericanos en la música, sin presión de conformarse a lo convencional. Para ellos, la música es una ruta para que puedan explorar la intersección del patrimonio latino y la crianza americana. </p>
+        <p class="article-text">Cuatro artistas cuentan las historias de su latinidad como latinoamericanos de primera generación , mezclando los estilos diferentes a través de las culturas, cantando en spanglish y haciendo malabarismos con su doble identidad. </p>
+      </div>
+    </div>
+
+    <div class="parallax" id="tatianaParallax">
+      <!-- <video preload="preload" id="tatianaVideo">
+      <source src="img/TatianaXicago.mov" type="video/mp4"></source>
+      </video> -->
+      <div class="parallaxRow">
+        <h1 class="parallaxCaption">Tatiana Hazel, a first-generation Mexican indie-pop singer and fashion designer</h1>
+      </div>
+    </div>
+
+    <div class="container">
+      <h1 class="artist-intro">Meet the Artists</h1>
     </div>
 
       <div class="row text-center modalHolder">
@@ -48,7 +107,6 @@
             <img class="card-img-top" src="img/dos_santos_insta.png" alt="dos-santos">
             <div class="card-hover">
               <h4 class="card-title">Dos Santos</h4>
-              <!-- <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p> -->
             </div>
           </div>
         </div>
@@ -58,7 +116,6 @@
             <img class="card-img-top" src="img/tatiana_siono.jpeg" alt="tatiana-hazel">
             <div class="card-hover">
               <h4 class="card-title">Tatiana Hazel</h4>
-              <!-- <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p> -->
             </div>
           </div>
         </div>
@@ -70,7 +127,6 @@
             <img class="card-img-top" src="img/kaina_insta.png" alt="kaina">
             <div class="card-hover">
               <h4 class="card-title">KAINA</h4>
-              <!-- <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p> -->
             </div>
           </div>
         </div>
@@ -80,83 +136,211 @@
             <img class="card-img-top" src="img/victor.jpg" alt="victor!">
             <div class="card-hover">
               <h4 class="card-title">VICTOR!</h4>
-              <!-- <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p> -->
             </div>
           </div>
         </div>
+      </div>
+      <div class="container" id="spotifyContainer">
+        <h1 class="artist-intro">Listen to Their Music</h1>
+        <iframe id="spotify-playlist" src="https://open.spotify.com/embed/user/annaclairewhite/playlist/5RxqBKZrzMZunujLy053lF" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
       </div>
 
     <div class="modal" id="modal1">
       <div class="modal-content">
         <span class="close" onclick="closeModal()">&times;</span>
         <h1>Dos Santos</h1>
-        <p>Dos Santos is a Chicago-based quintet, applauded for their mixing of diverse styles from cumbia, salsa, classic rock to jazz. The five members – Peter Vale, Alex Chavez, Daniel Villarreal-Carrillo, Jaime Garza, Nathan Karagianis – each have their own storied backgrounds in music.</p>
-        <p>The group made their first debut in May 2013, after Chavez (lead vocalist of Dos Santos) came to Chicago from Texas and found that there was a void of cumbia being performed. On November 10, 2013, Jasmine Garsd published a piece in NPR Music’s alt.latino titled “Cumbia: The Musical Backbone of Latin America,” stating that, “These vertebrae, aligned in a 2/4 beat, had always been there; they were hard and unmovable. Cumbia. And something else I wouldn't be able to define until I left my country: Latinidad. Latin-ness.”</p>
-        <p>Peter Vale is a Puerto Rican percussionist, born and raised in Chicago. He plays percussion for Dos Santos and said a lot of their music is borrowed from the genre Chicha Peruana, a Cumbia style that was famous in Peru in the 60s and 70s. </p>
-        <p>Vale said the music of Dos Santos has a “psychedelic groove” to it. But he emphasizes that they like mixing various styles of music that hold significance in their lives.</p>
-        <p>“It becomes more than just let’s write a song. It’s more of let’s put a each of us into this song. We each have that freedom, and it’s a very democratic process of writing that music,” Vale said. “That’s going to show – it already did in LOGOS. You have a lot of influences of various types of music, like me bringing sounds from La Rumba, Guaguanco, Salsa, Mo-Sambique and Congo.”</p>
-        <p>Beyond blending a range of styles, the music they create is bilingual – more specifically, Spanglish – because that is the language that is most natural to them.</p>
-        <p>“When Alex dropped the lyrics to ‘Return y Regreso,’ we didn’t even flinch to his lyrics and the fact that they were in English,” Vale said. “It was only when an interviewer pointed that out, which made me realize, ‘Woah that’s true! We have something in English!’ Other artists and bands are bilingual too. Down to the DJs who will play a Boogaloo (bugalú) song in English, it was an infectious latin beat with English lyrics over the top. That kind of music is representative of Spanglish.”</p>
-        <p>“It’s us and our own language. At home, I talked in Español, en casa, and English. There’s people that I know who will talk Spanglish to anybody, whether they know Spanish or not.”</p>
-        <p>Vale said the Spanglish language is part of his latin identity, as well as the Latin identity of Dos Santos, and so is his accent. </p>
-        <p>“When I listen to Hotel California from The Eagles, I am listening to them with Latino ears. When I hear something by Michael MacDonald and want to do my own cover, it would have my own accent,” Vale said. “Being Latino, no matter what you do, is going to be perceived as having an accent. It’s about how well you’re going to embrace that. I embrace it fully. My music has an accent, and I am proud of that.”</p>
-        <p>Growing up, Vale grew up in a household that played a range of genres. His mother owned an extensive vinyl collection, and he recalls listening to a lot of classic rock, like Michael MacDonald and the Doobie Brothers, The Eagles and Kenny Loggins. Then there was also a lot of Salsa like Frankie Ruiz.</p>
-        <p>“My mom put on these records, so I didn’t have a choice in what we were listening to. It definitely shaped what I enjoy listening to,” Vale said. “But the older Salsa recordings from the 70s that we would listen to – mom would grab me and we’d start dancing in the living room. When you listen to music and you associate it to some kind of moment, like dancing with mom in the living room, how can you not fall in love with that music?”</p>
-        <p>Vale said that he and the four other members of Dos Santos have become a family. Dos Santos has gained prominence in Chicago’s live music venues and festivals, such as the Park Summer Music Series and the Chicago World Music Festival. Peter Margasak of the Chicago Reader wrote in March 2015, "It seems only a matter of time before the combo becomes a key player on the country’s world-music circuit."</p>
-        <p>Since then, the band released an EP in 2016 entitled “Fonografic” on Electric Cowbell Records produced by Beto Martínez of Grammy Award-winning Grupo Fantasma. Then in Summer 2017, the band composed “Logos,” their International Anthem debut. </p>
+        <img src="img/DosSantosXicago.jpeg" id="dos-santos"/>
+        <div class="englishDiv" id="e-dos-santos">
+          <p>The music of Dos Santos, a chicago-based quintet,  fuses influences from Cumbia, Salsa, to classic rock and jazz. The group of five – Peter Vale, Alex Chavez, Daniel Villarreal-Carrillo, Jaime Garza and Nathan Karagianis – made their debut in May 2013, after lead vocalist Chavez moved to Chicago and found that there was a void of cumbia being performed.</p>
+          <hr />
+          <p>“In the beginning, it was based in Cumbia. It was a psychedelic and aggressive sound,” Vale, the percussionist of Dos Santos, said. “But then, I’d say that the evolution of the group is more open and is a different sound. I know that many people have tried to classify what type of music we play, but it’s not possible.”</p>
+          <hr />
+          <p>Beyond blending a range of styles, the music Dos Santos creates is in Spanglish because that is the language that is most natural to them.</p>
+          <p>“When Alex dropped the lyrics to ‘Return y Regreso,’ we didn’t even flinch to his lyrics and the fact that they were in English,” Vale said. “It was only when an interviewer pointed that out, which made me realize, ‘Woah that’s true! We have something in English!’ Other artists and bands are bilingual too. Down to the DJs who will play a Boogaloo song in English, it was an infectious Latin beat with English lyrics over the top. That kind of music is representative of Spanglish.” </p>
+          <p>Vale insisted that both his accent and the Spanish language are part of his Latin identity, as well as the Latin identity of Dos Santos.</p>
+          <p>“When I listen to ‘Hotel California’ from the Eagles, I am listening to them with Latino ears. When I hear something by Michael McDonald and want to do my own cover, it would have my own accent,” Vale said. “Being Latino, no matter what you do, is going to be perceived as having an accent. It’s about how well you’re going to embrace that. I embrace it fully. My music has an accent, and I am proud of that.”</p>
+          <img src="img/dossantos_quote.jpg" class="quote-img">
+          <p>La música de Dos Santos, dijo Vale, es una mezcla de Rock, de Cumbia o sonido latinoamericano. </p>
+          <p>"Con tiempo, tipo de Caribe, y de Afrobeat, es algo medio-oscuro y psicodélico, pero a la vez hay mucha consciencia. Eso es lo que es importante para nosotros: es que la música de nosotros diga algo y represente algo.”</p>
+          <video width="100%" controls>
+            <source src="img/DosSantos.MOV" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+          <hr />
+          <p>Dos Santos' music, said Vale, is a mix of Rock, Cumbia, or a Latin American sound.</p>
+          <p>“Later on, some type of Caribbean and Afrobeat; it’s something half-dark and psychedelic, but at the same time it’s very conscientious. That’s something that’s important to us: that our music says something and represents something.”</p>
+          <hr />
+          <p>Vale said that growing up, his mother owned an extensive vinyl collection, and he recalled listening to a lot of classic rock, like Michael McDonald and the Doobie Brothers, the Eagles and Kenny Loggins. Then there was also a lot of Salsa, like Frankie Ruiz.</p>
+          <p>“My mom put on these records, so I didn’t have a choice in what we were listening to. But it definitely shaped what I enjoy listening to,” Vale said. “The older Salsa recordings from the 70s would come on. My mom would grab me, and we’d start dancing in the living room. When you listen to music and you associate it to some kind of moment, like dancing with mom, how can you not fall in love with that music?”</p>
+        </div>
+        <div class="spanishDiv" id="s-dos-santos">
+          <p>La música de Dos Santos, un quinteto basado en Chicago, fusiona influencias de cumbia, salsa, rock y jazz. Los cinco miembros del grupo – Peter Vale, Alex Chavez, Daniel Villarreal-Carrillo, Jaime Garza and Nathan Karagianis – hicieron su debut en mayo 2013, después de Chavez se mudó a Chicago y se dio en cuenta de que no hay una presencia de cumbia.</p>
+          <p>“En el principio, estaba basado en la Cumbia. Era de un sonido psicodélico agresivo,” dijo Vale, el percusionista de Dos Santos. “ La evolución del grupo, yo diré que, está más abierto a diferentes países y a diferente sonidos. Yo sé que mucha personas han tratado de clasificar qué tipo de música nosotros tocamos, pero no es posible.”</p>
+          <p>Más allá de mezclar una gama de estilos, la música de Dos Santos es en Spanglish porque este idioma es la que más natural para ellos. </p>
+          <p>“Cuando Alex cantó las letras de ‘return y regreso,’ nunca nos echamos atrás a la hora del hecho de que las letras se impartieron en inglés,” dijo Vale. “Un entrevistador ha indicado el uso de Spanglish y solo no despertamos, ‘Esto es verdad! Tenemos algo de inglés!’ Otros artistas son bilingües también. Hay DJs que tocan música bugalú con letras en inglés. Esto es un ritmo latino infeccioso, y esto tipo de música es representativo de Spanglish.”</p>
+          <p>Vale dijo que su acento es un gran parte de su latinidad, al igual que la latinidad de Dos Santos.</p>
+          <p>“Cuando escucho a ‘Hotel California’ de the Eagles, estoy escuchando con orejas latinas. Cuando escucho algo de Michael McDonald y quiero hacer mi versión, tendría mi propio acento,” dijo Vale. “Para ser latino, hagamos lo que hagamos, será tener un acento. Se trata de cómo vas a abrazarlo. Yo lo abrazo totalmente. Mi música tiene un acento, y estoy orgulloso de ello.”</p>
+          <img src="img/dossantos_quote.jpg" class="quote-img">
+          <p>Además del acento, la música de Dos Santos, dijo Vale, es una mezcla de Rock, Cumbia o sonido latinoamericano. </p>
+          <p>“Con tiempo, tipo de Caribe, y de Afrobeat, es algo medio-oscuro y psicodélico, pero la ver mucho consciencia. Eso es lo que es importante para nosotros: es que la música de nosotros diga algo y represente algo.”</p>
+          <video width="100%" controls>
+            <source src="img/DosSantos.MOV" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+          <p>Vale dijo que cuando era niño, su madre es dueño de una colección extensiva de discos y recuerde escuchando el rock clásico, como Michael McDonald y the Doobie Brothers, the Eagles y Kenny Loggins. Había salsa también, como Frankie Ruiz.</p>
+          <p>“Mi mamá puso los discos, así que no tenía mucha opción de lo que escuchamos. Pero la música de mi crianza forma lo que disfruto escuchar hoy,” dijo Vale. “Cuando música de salsa que originaron en los años 70s se encendió, mi mamá me cogió y bailamos juntos en la sala de estar. La música que está asociada con una memoria, como bailando con mamá, cómo puedes no enamorarse de ello?”</p>
+        </div>
       </div>
     </div>
 
     <div class="modal" id="modal2">
       <div class="modal-content">
         <span class="close" onClick="closeModal()">&times;</span>
-        <p>Some text in the Modal 2..</p>
+        <h1>Tatiana Hazel</h1>
+        <div class="englishDiv" id="e-tatiana-hazel">
+          <p>First generation Mexican indie-pop singer Tatiana Hazel began building her following at the age of 13 through social media when she released her first original songs on YouTube. Hazel posted her first song in Spanish: a cover of Mexican indie-pop star Carla Morrison “Hasta La Piel.” While she loved the song, her comment section was filled strong criticism from her followers, who attacked her accent. </p>
+          <p>“I was so embarrassed. I speak it fluently, so I was like, ‘What?’” said Hazel.</p>
+          <p>From Missy Elliott to Slipknot, Hazel’s two older sisters exposed her to a diverse repertoire of American music at a young age. Despite not liking traditional Latin music her parents listened to, she was attracted to several indie-pop Mexican artists such as Carla Morrison, Julieta Venegas and Ximena Sariñana. These influences set the foundation for Hazel’s artistry. </p>
+          <p>“I didn’t think it was possible for me to do things in Spanish. They showed me the best of both worlds.” Hazel said.</p>
+          <img src="img/tatiana_quote.jpg" class="quote-img">
+          <p>Hazel’s first Spanish song, “Dímelo,” attracted one of the Latin Music Programmers at Apple Music, who messaged her on Instagram and had included her on several playlists. The following month, after playing a show in L.A,  Hazel performed her EP “Toxic” to the Apple Music staff. After performing her music, she was also introduced to the Indie music programmer, who also added Hazel to certain playlists.  </p>
+          <p>The 21-year-old artist and fashion designer continues to make music in Spanish, English and Spanglish, despite her critics.  Her mixture of both languages pushes the boundaries of traditional music genres.  When it comes to her songwriting process, language choice is not made intentional. Instead, her language choice is just a reflection of living in two cultures, a process that comes naturally to Hazel.</p>
+          <video width="100%" controls>
+            <source src="img/TatianaClip1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+          <p>“I feel like some people might hear one song that I did in Spanish and think that's all I do,” she said. “Other people might know me for my whole EP, which is more like a pop, English sound. I think it just depends on what people listen to. Personally , I don’t consider myself one thing,” says Hazel.</p>
+        </div>
+        <div class="spanishDiv" id="s-tatiana-hazel">
+          <p>La cantante de indie-pop Tatiana Hazel comenzó a desarrollar sus seguidores a la edad de 13 años a través de las redes sociales cuando subió  sus primeras canciones originales en YouTube. Hazel publicó su primera canción en español: una portada de la estrella mexicana de indie-pop Carla Morrison "Hasta La Piel". Aunque le encantó la canción, su sección de comentarios recibió fuertes críticas de sus seguidores, que atacaron su acento.</p>
+          <p>"Estaba tan avergonzado. Lo hablo con fluidez, así que dije "¿Qué?", ​​dijo Hazel.</p>
+          <p>Desde Missy Elliott hasta Slipknot, las dos hermanas mayores de Hazel la expusieron a un repertorio diverso de música estadounidense a una edad temprana. A pesar de que no le gustaba la música latina tradicional que escuchaban sus padres, se sintió atraída por varios artistas indie-pop mexicanos como Carla Morrison, Julieta Venegas y Ximena Sariñana. Estas influencias establecen las bases para el arte de Hazel.</p>
+          <p>“No pensé que me fuera posible hacer cosas en español. Me mostraron lo mejor de ambos mundos ," dijo Hazel.</p>
+          <img src="img/tatiana_quote.jpg" class="quote-img">
+          <p>La primera canción en español de Hazel, "Dimelo", atrajo a uno de los programadores de música latina de Apple Music, quien le envió un mensaje a Instagram y la incluyó en varias listas de reproducción. El mes siguiente, después de tocar un concierto en L.A, Hazel tocó su EP "Toxic" para el personal de Apple Music. Después de presentar su música, también fue presentada al programador de música Indie, quien también agregó Hazel a ciertas listas de reproducción.</p>
+          <p>A pesar de sus críticos, la mexicana de primera generación continúa haciendo música en español, inglés y spanglish. Su mezcla de ambos idiomas empuja los límites de los géneros musicales tradicionales. Cuando se trata de su proceso de composición de canciones, la elección del idioma no se hace intencionalmente. En cambio, su elección de idioma es solo un reflejo de vivir en dos culturas, un proceso que es natural en Hazel.</p>
+          <video width="100%" controls>
+            <source src="img/TatianaClip1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+          <p>"Siento que algunas personas pueden escuchar una canción que hice en español y pensar que eso es todo lo que hago", dijo. "Otras personas podrían conocerme por  mi EP, que es más como un sonido pop en inglés. Creo que solo depende de lo que la gente escucha. Personalmente, no me considero una sola cosa ", dijo Hazel.</p>
+        </div>
       </div>
     </div>
 
     <div class="modal" id="modal3">
       <div class="modal-content">
         <span class="close" onclick="closeModal()">&times;</span>
-        <p>Some text in the Modal 3..</p>
+        <h1>KAINA</h1>
+        <div class="englishDiv" id="e-kaina">
+          <p>Kaina Castillo, aka KAINA, grew up speaking Spanish, but like many first-generation children, she stopped feeling pressure from her parents to speak the language as she got older. Over time, she began to forget words.</p>
+          <p>Though many of her young Latinx music peers write songs in both English and Spanish, Castillo does not feel she can express herself equally in both languages. </p>
+          <p>“It almost feels like I’m appropriating something that is definitely already mine,” Castillo said of writing original music in Spanish, and instead favors incorporating Spanish covers into her live sets.</p>
+          <img src="img/kaina_quote.jpg" class="quote-img">
+          <video width="100%" controls>
+            <source src="img/KainaXicago.mov" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+          <p>Castillo comes from a varied musical background. Raised in the Irving Park neighborhood of Chicago, she grew up listening to Motown records and Salsa, like Celia Cruz, at her parent’s parties. Though frequently categorized as soul or R&B, her songs also combine elements of music from her childhood. along with what she described  a “softness and sweetness that came naturally as a songwriter.”</p>
+          <audio width="100%" controls>
+            <source src="img/KainaAudio1.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio>
+          <p>Though Castillo has been performing for six years as part of various projects, she released her first EP under the name KAINA in 2016: “sweet asl.,” a collaboration with fellow locals Bedows and the Burns Twins. She has since released a solo EP, “4u,” a track collaborating with Sen Morimoto, and her most recent August release, “f*cked up.”</p>
+          <p>KAINA blends her musical influences, but at times she feels uncomfortable with the space she occupies culturally as a relatively light-skinned, first-generation Latina growing up in Chicago. </p>
+          <p>“There are so many privileges I have and so many that I don’t,” Castillo said. “There’s this weird feeling of being mixed but you’re not.”, neither am I’m not.”</p>
+          <p>Castillo said that she has been able to explore her identity as a Latina and help her audience do the same. She described her main fan base as “really young Latinas,” and that fans often tell her that her shows helped them connect to their Latina identity in a way that they do not on a daily basis.</p>
+          <p>For Castillo, figuring out what it means for her to be a Latina artist is an ongoing process. </p>
+          <p>“Finding my identity as a Latina is going to be a continuous struggle,” Castillo said, “You can talk to anyone who makes music, who is Latinx, and their story is going to be completely different from mine, and that’s part of it.”</p>
+          <!-- <video width="100%" controls>
+            <source src="img/KainaVideo1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video> -->
+        </div>
+        <div class="spanishDiv" id="s-kaina">
+          <p>Kaina Castillo, alias KAINA, crecía hablando español, pero como muchos niños de primera generación, cuando ella se ponía mayor  sus padres dejaban de insistir que ella aprendiera la idioma y ella empezaba a olvidar palabras. </p>
+          <p>Aunque muchas de sus compañeras jóvenes de música Latinx escriben canciones en inglés y español, Castillo no siente que puede expresarse lo mismo en ambos idiomas.</p>
+          <p>“Casi siente como me estoy apropiando algo que es definitivamente ya la mía,” dice Castillo sobre escribiendo música original en español, y en vez favorece incorporando covers españolas en sus conciertos en vivo. </p>
+          <img src="img/kaina_quote.jpg" class="quote-img">
+          <video width="100%"controls>
+            <source src="img/KainaXicago.mov" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+          <p>Castillo viene de un fondo musical variado. Criado en el barrio de Irving Park en Chicago, Castillo crecí escuchando a tapas de Motown y música Salsa como Celia Cruz a las fiestas de sus padres. Aunque ella está categorizado con frecuencia como música Soul o R&B, sus canciones también mezclan elementos de su fondo musical junto con un “suavidad y dulzor que viene naturalmente como compositor.” </p>
+          <audio controls>
+            <source src="img/KainaAudio1.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+          </audio>
+          <p>Aunque Castillo ha cantando con varias bandas para seis años, ella lanzó su primer EP bajo el nombre KAINA en 2016: “sweet asl.”, un colaboración con compañeros locales Bedows y los Burns Twins. Desde esta tapa, ella ha lanzado un EP solitario, “4u”, un canción que colabora con Sen Morimoto, y su lanzamiento más reciente de agosto, “f*cked up.”</p>
+          <p>KAINA es adepta  a mezclando sus influencias musicales, pero a veces ella siente incómodo con el espacio ella ocupa culturalmente como una Latina de piel relativamente clara, de generación primera viviendo en Chicago. “Hay tantos privilegios que tengo y tantos que no,” dice Castillo. “Hay una sensación raro de estar mezclado pero no soy, porque no soy.”</p>
+          <p>Castillo dice que ha sido capaz de explorar su identidad Latina y ayudar su audiencia en hacer lo mismo: ella describe su fan base principal como “Latinas muy jóvenes,” y dice que sus fans le dicen con frecuencia que ellas conciertos les ayuden a conectar a sus identidades Latinas en una manera que no hacen diariamente. Castillo es un representación encarnada de qué significa ser un artista Latina y jóven. </p>
+          <p>Para Castillo, averiguar qué significa ser un artista Latina es un proceso en curso. “Averiguando mi identidad como Latina sería una lucha continua,” dice Castillo, “Porque, puedes hablar con cualquier persona Latinx que hace música, y su historia va a ser completamente diferente a la mía, y esto es parte de ella.”</p>
+          <!-- <video width="100%" controls>
+            <source src="img/KainaVideo1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video> -->
+        </div>
       </div>
     </div>
 
     <div class="modal" id="modal4">
       <div class="modal-content">
         <span class="close" onclick="closeModal()">&times;</span>
-        <p>Some text in the Modal 4..</p>
+        <h1>VICTOR!</h1>
+        <div class="englishDiv" id="e-victor">
+          <p>Cervantes likens his music to a thick blanket.</p>
+          <p>“When you go washing and you just dried all of your clothes, it smells like softener,” the singer says. “You take your blanket out of the drier and wrap yourself in it. That’s how my music kind of feels.”</p>
+          <video width="100%" controls>
+            <source src="img/VictorXicago.mov" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+          <p>While many 18-year-olds are completing their college applications, Cervantes spends his days recording music and making beats. The Mexican-American artist grew up in the city-encapsulated suburb of Cicero, Illinois. He was first exposed to music through singing at church, and shortly after, making church music turned into making music for himself and his friends.</p>
+          <p>“I was writing songs for my youth group, but then I felt that was kind of boring,” says Cervantes. “I started writing my own stuff, and since I already knew how to make beats, I started making my own songs,” says Cervantes.</p>
+          <p>Cervantes grew up listening to Eydie Gormé, Los Panchos and the Mexican rock band Maná. Cervantes said he is grateful for the growing interest in Latin music in the U.S. and while some worry this national fixation could lead to cultural appropriation, he sees as an opportunity for Latinos to shape how the U.S. perceives them.</p>
+          <video width="100%" controls>
+            <source src="img/VictorVideo2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+          <p>The increased attention directed towards Latinx artists gives them a platform and a voice, which could increase understanding of the Latinx community.</p>
+          <p>As a first-generation Mexican living in the U.S., Cervantes said it is difficult to embrace his culture through language. When growing up around white friends, Cervantes was careful to never speak Spanish, scared of what they would think. However, as he grew older and began to embrace his Latin identity, he felt more confident exploring the language through music, incorporating lyrics in both Spanish and English into his more recent songs. </p>
+          <p>“It has become easier for artists like me, Omar Apollo and Cuco to start singing in Spanish. We feel more comfortable in our own skin,” Cervantes says. “People are seeing this as a new era of music.”</p>
+          <img src="img/victor_quote.jpg" class="quote-img">
+        </div>
+        <div class="spanishDiv" id="s-victor">
+          <p>Victor Cervantes, alias VICTOR!, compara su música a una manta gruesa.</p>
+          <p>"Cuando estás lavando la ropa, y acabas de secar todo, huele a suavizante,” dice el cantante. “La sacas del secador, y te envuelves en la manta.”</p>
+          <video width="100%" controls>
+            <source src="img/VictorXicago.mov" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+          <p>Cuando otros adolescentes de la edad de dieciocho están terminando las solicitudes para asistir la universidad, Cervantes pasa los días grabando música y haciendo ritmos para sí mismo y sus amigos.</p>
+          <p>“Estaba escribiendo canciones para mi grupo de jóvenes,  pero me sentía que era un poco aburrido,” dice Cervantes. “Empecé a escribir mis propias cosas, y porque ya sé componer los ritmos, empecé a escribir mis propias canciones,” dice Cervantes.</p>
+          <p>Cervantes se crió escuchando la música de Eydie Gormé, Los Panchos y la banda mexicana de rock, Maná. Cervantes dice que está agradecido para el interés creciente en la música latina en los EEUU, y mientras otros se preocupan que esta fijación nacional puede resultar en la comodificación cultural, él ve una oportunidad para que los latinos puedan formar cómo los EEUU les percibe. </p>
+          <video width="100%" controls>
+            <source src="img/VictorVideo2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+          <p>La atención aumentada dirigida hacia las artistas latinas les da un plataforma y una voz, el cual puede incrementar el entendimiento de la comunidad latina. </p>
+          <p>Como un mexicano de la primera generación que vive en los EEUU, Cervantes dice que es difícil abrazar su cultura por el idioma. Se crió rodeado por amigos blancos, Cervantes tenía cuidado de nunca hablar el español por el miedo de lo que pensarían sus amigos. Sin embargo, cuando era mayor, empezó a abrazar su latinidad, y se sentía confidente explorando el idioma por la música, incorporando la letra en los dos español y inglés en canciones más recientes. </p>
+          <p>“Ha llegado a ser más fácil empezar a cantar en español para artistas como yo, Omar Apollo y Cuco. Nos sentimos más cómodos en nuestra propia piel,” Cervantes dice. “A otras personas les parece que esta es una nueva época de música.”</p>
+          <img src="img/victor_quote.jpg" class="quote-img">
+        </div>
       </div>
     </div>
 
     </div>
     <!-- /.row -->
-    <div class="parallax"></div>
 
-  <div class="container">
-    <h1>Sed ut perspiciatis unde omnis iste natus </h1>
-    <p class="article-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-    <!-- <blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <p></blockquote>
-    <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p> -->
-  </div> <!-- /.container -->
-
-  <div id="chartContainer">
-    <div id="chart"></div>
-  </div>
-
-  <div class="container">
-    <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </div>
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="main.js"></script>
   </body>
   <!-- Footer -->
-  <footer class="py-5 bg-dark">
+  <!-- <footer class="py-5 bg-dark">
     <div class="container">
       <p class="m-0 text-center text-white">Information about methodology<br/>Specify who did what</p>
     </div>
-    <!-- /.container -->
-  </footer>
+  </footer> -->
 
 </html>
