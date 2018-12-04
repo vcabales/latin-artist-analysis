@@ -38,6 +38,10 @@ body {
   font-family: 'Righteous', cursive;
 }
 
+#a1 {
+  padding: 20px;
+}
+
 .quote-img {
   width: 100%;
 }
