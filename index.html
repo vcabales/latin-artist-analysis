@@ -30,8 +30,8 @@
     <!-- Page Content -->
     <div class="container">
       <h1>The Rise of Chicago's Latin DIY Music Scene</h1>
-      <button>Read in English</button>
-      <button>Read in Spanish</button>
+      <button onclick="readEnglish()">Read in English</button>
+      <button onclick="readSpanish()">Read in Spanish</button>
       <div class="englishDiv" id="ed1">
         <p class="article-text" id="byline"><em>By Victoria Cabales, Andres Correa, Anna White, and Courtney Zhu</em></p>
         <p class="article-text">On the Friday eve before Halloween, Kimberly Lopez and Lupe Arrieta wait in the 20-person line outside of East Room in Chicago’s Logan Square for Pachanga, a monthly dance party showcasing local Latino artists across all genres. </p>
@@ -64,7 +64,11 @@
       </div>
     </div>
 
-    <!-- <div class="parallax"></div> -->
+    <div class="parallax" id="tatianaParallax">
+      <!-- <video preload="preload" id="tatianaVideo">
+      <source src="img/TatianaXicago.mov" type="video/mp4"></source>
+      </video> -->
+    </div>
 
     <div class="container">
       <h1>Meet the Artists</h1>
@@ -114,6 +118,7 @@
       <div class="modal-content">
         <span class="close" onclick="closeModal()">&times;</span>
         <h1>Dos Santos</h1>
+        <img src="img/DosSantosXicago.jpeg" id="dos-santos"/>
         <div class="englishDiv" id="e-dos-santos">
           <p>The music of Dos Santos, a chicago-based quintet,  fuses influences from Cumbia, Salsa, to classic rock and jazz. The group of five – Peter Vale, Alex Chavez, Daniel Villarreal-Carrillo, Jaime Garza and Nathan Karagianis – made their debut in May 2013, after lead vocalist Chavez moved to Chicago and found that there was a void of cumbia being performed.</p>
           <hr />
@@ -125,6 +130,10 @@
           <p>La música de Dos Santos, dijo Vale, es una mezcla de Rock, de Cumbia o sonido latinoamericano. </p>
           <p>"Con tiempo, tipo de Caribe, y de Afrobeat, es algo medio-oscuro y psicodélico, pero a la vez hay mucha consciencia. Eso es lo que es importante para nosotros: es que la música de nosotros diga algo y represente algo.”</p>
           <hr/>
+          <video width="100%" controls>
+            <source src="img/DosSantos.MOV" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
           <p>Dos Santos' music, said Vale, is a mix of Rock, Cumbia, or a Latin American sound.</p>
           <p>“Later on, some type of Caribbean and Afrobeat; it’s something half-dark and psychedelic, but at the same time it’s very conscientious. That’s something that’s important to us: that our music says something and represents something.”</p>
           <p>Vale said that growing up, his mother owned an extensive vinyl collection, and he recalled listening to a lot of classic rock, like Michael McDonald and the Doobie Brothers, the Eagles and Kenny Loggins. Then there was also a lot of Salsa, like Frankie Ruiz.</p>
@@ -139,6 +148,10 @@
           <p>“Cuando escucho a ‘Hotel California’ de the Eagles, estoy escuchando con orejas latinas. Cuando escucho algo de Michael McDonald y quiero hacer mi versión, tendría mi propio acento,” dijo Vale. “Para ser latino, hagamos lo que hagamos, será tener un acento. Se trata de cómo vas a abrazarlo. Yo lo abrazo totalmente. Mi música tiene un acento, y estoy orgulloso de ello.”</p>
           <p>Además del acento, la música de Dos Santos, dijo Vale, es una mezcla de Rock, Cumbia o sonido latinoamericano. </p>
           <p>“Con tiempo, tipo de Caribe, y de Afrobeat, es algo medio-oscuro y psicodélico, pero la ver mucho consciencia. Eso es lo que es importante para nosotros: es que la música de nosotros diga algo y represente algo.”</p>
+          <video width="100%" controls>
+            <source src="img/DosSantos.MOV" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
           <p>Vale dijo que cuando era niño, su madre es dueño de una colección extensiva de discos y recuerde escuchando el rock clásico, como Michael McDonald y the Doobie Brothers, the Eagles y Kenny Loggins. Había salsa también, como Frankie Ruiz.</p>
           <p>“Mi mamá puso los discos, así que no tenía mucha opción de lo que escuchamos. Pero la música de mi crianza forma lo que disfruto escuchar hoy,” dijo Vale. “Cuando música de salsa que originaron en los años 70s se encendió, mi mamá me cogió y bailamos juntos en la sala de estar. La música que está asociada con una memoria, como bailando con mamá, cómo puedes no enamorarse de ello?”</p>
         </div>
@@ -156,8 +169,8 @@
           <p>“I didn’t think it was possible for me to do things in Spanish. They showed me the best of both worlds.” Hazel said.</p>
           <p>Hazel’s first Spanish song, “Dímelo,” attracted one of the Latin Music Programmers at Apple Music, who messaged her on Instagram and had included her on several playlists. The following month, after playing a show in L.A,  Hazel performed her EP “Toxic” to the Apple Music staff. After performing her music, she was also introduced to the Indie music programmer, who also added Hazel to certain playlists.  </p>
           <p>The 21-year-old artist and fashion designer continues to make music in Spanish, English and Spanglish, despite her critics.  Her mixture of both languages pushes the boundaries of traditional music genres.  When it comes to her songwriting process, language choice is not made intentional. Instead, her language choice is just a reflection of living in two cultures, a process that comes naturally to Hazel.</p>
-          <video width="320" height="240" controls>
-            <source src="movie.mp4" type="video/mp4">
+          <video width="100%" controls>
+            <source src="img/TatianaClip1.mp4" type="video/mp4">
           Your browser does not support the video tag.
           </video>
           <p>“I feel like some people might hear one song that I did in Spanish and think that's all I do,” she said. “Other people might know me for my whole EP, which is more like a pop, English sound. I think it just depends on what people listen to. Personally , I don’t consider myself one thing,” says Hazel.</p>
@@ -169,8 +182,8 @@
           <p>“No pensé que me fuera posible hacer cosas en español. Me mostraron lo mejor de ambos mundos ," dijo Hazel.</p>
           <p>La primera canción en español de Hazel, "Dimelo", atrajo a uno de los programadores de música latina de Apple Music, quien le envió un mensaje a Instagram y la incluyó en varias listas de reproducción. El mes siguiente, después de tocar un concierto en L.A, Hazel tocó su EP "Toxic" para el personal de Apple Music. Después de presentar su música, también fue presentada al programador de música Indie, quien también agregó Hazel a ciertas listas de reproducción.</p>
           <p>A pesar de sus críticos, la mexicana de primera generación continúa haciendo música en español, inglés y spanglish. Su mezcla de ambos idiomas empuja los límites de los géneros musicales tradicionales. Cuando se trata de su proceso de composición de canciones, la elección del idioma no se hace intencionalmente. En cambio, su elección de idioma es solo un reflejo de vivir en dos culturas, un proceso que es natural en Hazel.</p>
-          <video width="320" height="240" controls>
-            <source src="movie.mp4" type="video/mp4">
+          <video width="100%" controls>
+            <source src="img/TatianaClip1.mp4" type="video/mp4">
           Your browser does not support the video tag.
           </video>
           <p>"Siento que algunas personas pueden escuchar una canción que hice en español y pensar que eso es todo lo que hago", dijo. "Otras personas podrían conocerme por  mi EP, que es más como un sonido pop en inglés. Creo que solo depende de lo que la gente escucha. Personalmente, no me considero una sola cosa ", dijo Hazel.</p>
@@ -186,13 +199,13 @@
           <p>Kaina Castillo, aka KAINA, grew up speaking Spanish, but like many first-generation children, she stopped feeling pressure from her parents to speak the language as she got older. Over time, she began to forget words.</p>
           <p>Though many of her young Latinx music peers write songs in both English and Spanish, Castillo does not feel she can express herself equally in both languages. </p>
           <p>“It almost feels like I’m appropriating something that is definitely already mine,” Castillo said of writing original music in Spanish, and instead favors incorporating Spanish covers into her live sets.</p>
-          <video width="320" height="240" controls>
-            <source src="movie.mp4" type="video/mp4">
+          <video width="100%" controls>
+            <source src="img/KainaXicago.mov" type="video/mp4">
           Your browser does not support the video tag.
           </video>
           <p>Castillo comes from a varied musical background. Raised in the Irving Park neighborhood of Chicago, she grew up listening to Motown records and Salsa, like Celia Cruz, at her parent’s parties. Though frequently categorized as soul or R&B, her songs also combine elements of music from her childhood. along with what she described  a “softness and sweetness that came naturally as a songwriter.”</p>
-          <audio controls>
-            <source src="horse.mp3" type="audio/mpeg">
+          <audio width="100%" controls>
+            <source src="img/KainaAudio1.mp3" type="audio/mpeg">
           Your browser does not support the audio element.
           </audio>
           <p>Though Castillo has been performing for six years as part of various projects, she released her first EP under the name KAINA in 2016: “sweet asl.,” a collaboration with fellow locals Bedows and the Burns Twins. She has since released a solo EP, “4u,” a track collaborating with Sen Morimoto, and her most recent August release, “f*cked up.”</p>
@@ -201,24 +214,32 @@
           <p>Castillo said that she has been able to explore her identity as a Latina and help her audience do the same. She described her main fan base as “really young Latinas,” and that fans often tell her that her shows helped them connect to their Latina identity in a way that they do not on a daily basis.</p>
           <p>For Castillo, figuring out what it means for her to be a Latina artist is an ongoing process. </p>
           <p>“Finding my identity as a Latina is going to be a continuous struggle,” Castillo said, “You can talk to anyone who makes music, who is Latinx, and their story is going to be completely different from mine, and that’s part of it.”</p>
+          <video width="100%" controls>
+            <source src="img/KainaVideo1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
         </div>
         <div class="spanishDiv" id="s-kaina">
           <p>Kaina Castillo, alias KAINA, crecía hablando español, pero como muchos niños de primera generación, cuando ella se ponía mayor  sus padres dejaban de insistir que ella aprendiera la idioma y ella empezaba a olvidar palabras. </p>
           <p>Aunque muchas de sus compañeras jóvenes de música Latinx escriben canciones en inglés y español, Castillo no siente que puede expresarse lo mismo en ambos idiomas.</p>
           <p>“Casi siente como me estoy apropiando algo que es definitivamente ya la mía,” dice Castillo sobre escribiendo música original en español, y en vez favorece incorporando covers españolas en sus conciertos en vivo. </p>
-          <video width="320" height="240" controls>
-            <source src="movie.mp4" type="video/mp4">
+          <video width="100%"controls>
+            <source src="img/KainaXicago.mov" type="video/mp4">
           Your browser does not support the video tag.
           </video>
           <p>Castillo viene de un fondo musical variado. Criado en el barrio de Irving Park en Chicago, Castillo crecí escuchando a tapas de Motown y música Salsa como Celia Cruz a las fiestas de sus padres. Aunque ella está categorizado con frecuencia como música Soul o R&B, sus canciones también mezclan elementos de su fondo musical junto con un “suavidad y dulzor que viene naturalmente como compositor.” </p>
           <audio controls>
-            <source src="horse.mp3" type="audio/mpeg">
+            <source src="img/KainaAudio1.mp3" type="audio/mpeg">
           Your browser does not support the audio element.
           </audio>
           <p>Aunque Castillo ha cantando con varias bandas para seis años, ella lanzó su primer EP bajo el nombre KAINA en 2016: “sweet asl.”, un colaboración con compañeros locales Bedows y los Burns Twins. Desde esta tapa, ella ha lanzado un EP solitario, “4u”, un canción que colabora con Sen Morimoto, y su lanzamiento más reciente de agosto, “f*cked up.”</p>
           <p>KAINA es adepta  a mezclando sus influencias musicales, pero a veces ella siente incómodo con el espacio ella ocupa culturalmente como una Latina de piel relativamente clara, de generación primera viviendo en Chicago. “Hay tantos privilegios que tengo y tantos que no,” dice Castillo. “Hay una sensación raro de estar mezclado pero no soy, porque no soy.”</p>
           <p>Castillo dice que ha sido capaz de explorar su identidad Latina y ayudar su audiencia en hacer lo mismo: ella describe su fan base principal como “Latinas muy jóvenes,” y dice que sus fans le dicen con frecuencia que ellas conciertos les ayuden a conectar a sus identidades Latinas en una manera que no hacen diariamente. Castillo es un representación encarnada de qué significa ser un artista Latina y jóven. </p>
           <p>Para Castillo, averiguar qué significa ser un artista Latina es un proceso en curso. “Averiguando mi identidad como Latina sería una lucha continua,” dice Castillo, “Porque, puedes hablar con cualquier persona Latinx que hace música, y su historia va a ser completamente diferente a la mía, y esto es parte de ella.”</p>
+          <video width="100%" controls>
+            <source src="img/KainaVideo1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
         </div>
       </div>
     </div>
@@ -229,8 +250,39 @@
         <h1>VICTOR!</h1>
         <div class="englishDiv" id="e-victor">
           <p>Cervantes likens his music to a thick blanket.</p>
+          <p>“When you go washing and you just dried all of your clothes, it smells like softener,” the singer says. “You take your blanket out of the drier and wrap yourself in it. That’s how my music kind of feels.”</p>
+          <video width="100%" controls>
+            <source src="img/VictorXicago.mov" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+          <p>While many 18-year-olds are completing their college applications, Cervantes spends his days recording music and making beats. The Mexican-American artist grew up in the city-encapsulated suburb of Cicero, Illinois. He was first exposed to music through singing at church, and shortly after, making church music turned into making music for himself and his friends.</p>
+          <p>“I was writing songs for my youth group, but then I felt that was kind of boring,” says Cervantes. “I started writing my own stuff, and since I already knew how to make beats, I started making my own songs,” says Cervantes.</p>
+          <p>Cervantes grew up listening to Eydie Gormé, Los Panchos and the Mexican rock band Maná. Cervantes said he is grateful for the growing interest in Latin music in the U.S. and while some worry this national fixation could lead to cultural appropriation, he sees as an opportunity for Latinos to shape how the U.S. perceives them.</p>
+          <video width="100%" controls>
+            <source src="img/VictorVideo2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+          <p>The increased attention directed towards Latinx artists gives them a platform and a voice, which could increase understanding of the Latinx community.</p>
+          <p>As a first-generation Mexican living in the U.S., Cervantes said it is difficult to embrace his culture through language. When growing up around white friends, Cervantes was careful to never speak Spanish, scared of what they would think. However, as he grew older and began to embrace his Latin identity, he felt more confident exploring the language through music, incorporating lyrics in both Spanish and English into his more recent songs. </p>
+          <p>“It has become easier for artists like me, Omar Apollo and Cuco to start singing in Spanish. We feel more comfortable in our own skin,” Cervantes says. “People are seeing this as a new era of music.”</p>
         </div>
         <div class="spanishDiv" id="s-victor">
+          <p>Victor Cervantes, alias VICTOR!, compara su música a una manta gruesa.</p>
+          <p>"Cuando estás lavando la ropa, y acabas de secar todo, huele a suavizante,” dice el cantante. “La sacas del secador, y te envuelves en la manta.”</p>
+          <video width="100%" controls>
+            <source src="img/VictorXicago.mov" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+          <p>Cuando otros adolescentes de la edad de dieciocho están terminando las solicitudes para asistir la universidad, Cervantes pasa los días grabando música y haciendo ritmos para sí mismo y sus amigos.</p>
+          <p>“Estaba escribiendo canciones para mi grupo de jóvenes,  pero me sentía que era un poco aburrido,” dice Cervantes. “Empecé a escribir mis propias cosas, y porque ya sé componer los ritmos, empecé a escribir mis propias canciones,” dice Cervantes.</p>
+          <p>Cervantes se crió escuchando la música de Eydie Gormé, Los Panchos y la banda mexicana de rock, Maná. Cervantes dice que está agradecido para el interés creciente en la música latina en los EEUU, y mientras otros se preocupan que esta fijación nacional puede resultar en la comodificación cultural, él ve una oportunidad para que los latinos puedan formar cómo los EEUU les percibe. </p>
+          <video width="100%" controls>
+            <source src="img/VictorVideo2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+          <p>La atención aumentada dirigida hacia las artistas latinas les da un plataforma y una voz, el cual puede incrementar el entendimiento de la comunidad latina. </p>
+          <p>Como un mexicano de la primera generación que vive en los EEUU, Cervantes dice que es difícil abrazar su cultura por el idioma. Se crió rodeado por amigos blancos, Cervantes tenía cuidado de nunca hablar el español por el miedo de lo que pensarían sus amigos. Sin embargo, cuando era mayor, empezó a abrazar su latinidad, y se sentía confidente explorando el idioma por la música, incorporando la letra en los dos español y inglés en canciones más recientes. </p>
+          <p>“Ha llegado a ser más fácil empezar a cantar en español para artistas como yo, Omar Apollo y Cuco. Nos sentimos más cómodos en nuestra propia piel,” Cervantes dice. “A otras personas les parece que esta es una nueva época de música.”</p>
         </div>
       </div>
     </div>

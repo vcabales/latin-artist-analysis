@@ -16,3 +16,8 @@ text {
 .spanishDiv {
   display: none; /* Set display to none at the beginning */
 }
+
+#dos-santos {
+  width: 100%;
+  /* height: 10%; */
+}
