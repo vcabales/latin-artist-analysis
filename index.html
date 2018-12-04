@@ -30,10 +30,18 @@
     <!-- Page Content -->
     <div class="container">
       <h1>The Rise of Chicago's Latin DIY Music Scene</h1>
-      <button onclick="readEnglish()">Read in English</button>
-      <button onclick="readSpanish()">Read in Spanish</button>
+      <button class="btn-group-toggle" data-toggle="buttons" onclick="readEnglish()">
+        <label class="btn btn-secondary active">
+          <input type="checkbox" checked autocomplete="off"> Read in English
+        </label>
+      </button>
+      <button class="btn-group-toggle" data-toggle="buttons" onclick="readSpanish()">
+        <label class="btn btn-secondary active">
+          <input type="checkbox" checked autocomplete="off"> Read in Spanish
+        </label>
+      </button>
       <div class="englishDiv" id="ed1">
-        <p class="article-text" id="byline"><em>By Victoria Cabales, Andres Correa, Anna White, and Courtney Zhu</em></p>
+        <p class="article-text"><em>By Victoria Cabales, Andres Correa, Anna White, and Courtney Zhu</em></p>
         <p class="article-text">On the Friday eve before Halloween, Kimberly Lopez and Lupe Arrieta wait in the 20-person line outside of East Room in Chicago’s Logan Square for Pachanga, a monthly dance party showcasing local Latino artists across all genres. </p>
         <p class="article-text">“A lot of people have been here. They keep saying, ‘Oh, you should come.’ Specifically, Pachanga night. Everyone says Pachanga Night is the one to come,” say Lopez. Familiar with popular reggaeton artists such as Ozuna, the pair are excited about a night of Latin music, despite not knowing the specific work of any of the DJs performing at this night’s Pachanga.</p>
         <p class="article-text">Inside the low-lit, cash-only venue, people danced to Drake’s voice playing over the cumbia beats. Others waited in line to get their face painted, Calavera-style, a decorative skull rooted in the Mexican tradition of El Día De Los Muertos, or The Day of The Dead.  In the bar area, people showcase their elaborate costumes as they wait for the drink of the night, La Llorona, the East Room’s rendition of the classic Paloma. Plastered on the walls were posters promoting the November 3rd event, Xicago: a Redbull-sponsored event showcasing a range of Chicago-based Latin artists.</p>
@@ -41,13 +49,20 @@
       </div>
 
       <div class="spanishDiv" id="sd1">
+        <p class="article-text"><em>Por Victoria Cabales, Andres Correa, Anna White, and Courtney Zhu</em></p>
+        <p class="article-text">El viernes antes de Halloween, Kimberly López y Lupe Arrieta esperan en la línea de 20 personas afuera de The East Room en Logan Square para Pachanga, una fiesta de baile mensual que muestra artistas latinos locales de todos los géneros.</p>
+        <p class="article-text">“Mucha gente ha estado aquí. Siguen diciendo: 'Oh, deberías venir'. Específicamente, la noche de Pachanga. Todos dicen que la Noche de Pachanga es la que está por venir ", dice López.  Como fans de  los artistas populares del reggaeton como Ozuna, los dos están entusiasmados con una noche de música latina, a pesar de no saber la musica específico de ninguno de los DJ que se presentan en la Pachanga de esta noche.</p>
+        <p class="article-text">Dentro del lugar de atenuadas que solo tomó dinero en efectivo,  la gente bailaba con la voz de Drake tocaba sobre los ritmos de la cumbia. Otros esperaban en fila para pintarse la cara, al estilo de Calavera, un cráneo decorativo enraizado en la tradición mexicana de El Día de los Muertos, o El Día de los Muertos. En la zona del bar, la gente mostraba sus disfraces mientras esperan la bebida de la noche, La Llorona, la interpretación de la Paloma clásica del East Room. Pegados en las paredes había carteles de promocionar para el evento del 3 de noviembre, Xicago: un evento patrocinado por Redbull que muestra una gama de artistas latinos de Chicago.</p>
       </div>
       <!-- Page Features -->
 
     </div> <!-- End Container -->
 
-    <div class="parallax">
-      <div id="chartContainer"> <!-- Place this at center of div -->
+    <div class="parallax" id="placeholder">
+    </div>
+
+    <div class="parallax" style="display:none">
+      <div id="chartContainer">
         <div id="chart"></div>
       </div>
     </div>
@@ -61,6 +76,11 @@
         <p class="article-text">Social media is a crucial part of this changing landscape. Chicago-based artist Victor Cervantes, aka VICTOR!, grew up with the Internet boom and said, “Now, people don’t have to wait for you at shows to meet you in person. You can just go on [Instagram] Live and say hi,” said Cervantes.</p>
         <p class="article-text">Cervantes is candid on Instagram, posting anything from fleeting thoughts, childhood memories to pictures of himself cuddling dogs. It is a platform his followers can get to know not just his music as VICTOR!, but who he is: a first-generation Latino 18-year-old. </p>
         <p class="article-text">Cervantes is one of many Latinx artists taking part in Chicago’s rapidly evolving DIY music scene.</p>
+      </div>
+      <div class="spanishDiv" id="sd2">
+        <p class="article-text">Más y más estadounidenses están familiarizándose con música como el reguetón por el éxito de artistas latinos en la música convencional. Desde el auge de canciones como “Despacito” de Luis Fonsi y Daddy Yankee y “Mi Gente” por J Balvin, la música latina se ha afianzado en la industria musical. En 2017, 19 canciones latinas se clasificaron en Billboard Hot 100, en comparación con solamente cuatro en 2016 y tres en 2015.</p>
+        <p class="article-text">No obstante, este auge no es la única manera en que la industria musical está desarrollándose: las plataformas de streaming como Spotify, SoundCloud y Youtube han creado un espacio donde los artistas independientes pueden compartir su música con el resto del mundo. A partir de septiembre de 2018, Spotify comenzó a permitir a los artistas independientes subir su música directamente a la plataforma y pasar por encima de los sellos discográficos tradicionales. Los artistas latinos independientes ahora tienen más poder para abrazar sus identidades como latinoamericanos en la música, sin presión de conformarse a lo convencional. Para ellos, la música es una ruta para que puedan explorar la intersección del patrimonio latino y la crianza americana. </p>
+        <p class="article-text">Cuatro artistas cuentan las historias de su latinidad como latinoamericanos de primera generación , mezclando los estilos diferentes a través de las culturas, cantando en spanglish y haciendo malabarismos con su doble identidad. </p>
       </div>
     </div>
 
@@ -214,10 +234,10 @@
           <p>Castillo said that she has been able to explore her identity as a Latina and help her audience do the same. She described her main fan base as “really young Latinas,” and that fans often tell her that her shows helped them connect to their Latina identity in a way that they do not on a daily basis.</p>
           <p>For Castillo, figuring out what it means for her to be a Latina artist is an ongoing process. </p>
           <p>“Finding my identity as a Latina is going to be a continuous struggle,” Castillo said, “You can talk to anyone who makes music, who is Latinx, and their story is going to be completely different from mine, and that’s part of it.”</p>
-          <video width="100%" controls>
+          <!-- <video width="100%" controls>
             <source src="img/KainaVideo1.mp4" type="video/mp4">
           Your browser does not support the video tag.
-          </video>
+          </video> -->
         </div>
         <div class="spanishDiv" id="s-kaina">
           <p>Kaina Castillo, alias KAINA, crecía hablando español, pero como muchos niños de primera generación, cuando ella se ponía mayor  sus padres dejaban de insistir que ella aprendiera la idioma y ella empezaba a olvidar palabras. </p>
@@ -236,10 +256,10 @@
           <p>KAINA es adepta  a mezclando sus influencias musicales, pero a veces ella siente incómodo con el espacio ella ocupa culturalmente como una Latina de piel relativamente clara, de generación primera viviendo en Chicago. “Hay tantos privilegios que tengo y tantos que no,” dice Castillo. “Hay una sensación raro de estar mezclado pero no soy, porque no soy.”</p>
           <p>Castillo dice que ha sido capaz de explorar su identidad Latina y ayudar su audiencia en hacer lo mismo: ella describe su fan base principal como “Latinas muy jóvenes,” y dice que sus fans le dicen con frecuencia que ellas conciertos les ayuden a conectar a sus identidades Latinas en una manera que no hacen diariamente. Castillo es un representación encarnada de qué significa ser un artista Latina y jóven. </p>
           <p>Para Castillo, averiguar qué significa ser un artista Latina es un proceso en curso. “Averiguando mi identidad como Latina sería una lucha continua,” dice Castillo, “Porque, puedes hablar con cualquier persona Latinx que hace música, y su historia va a ser completamente diferente a la mía, y esto es parte de ella.”</p>
-          <video width="100%" controls>
+          <!-- <video width="100%" controls>
             <source src="img/KainaVideo1.mp4" type="video/mp4">
           Your browser does not support the video tag.
-          </video>
+          </video> -->
         </div>
       </div>
     </div>
@@ -296,11 +316,10 @@
     <script src="main.js"></script>
   </body>
   <!-- Footer -->
-  <footer class="py-5 bg-dark">
+  <!-- <footer class="py-5 bg-dark">
     <div class="container">
       <p class="m-0 text-center text-white">Information about methodology<br/>Specify who did what</p>
     </div>
-    <!-- /.container -->
-  </footer>
+  </footer> -->
 
 </html>
