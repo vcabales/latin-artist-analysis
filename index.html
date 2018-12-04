@@ -26,9 +26,10 @@
         </div>
       </div>
     </div>
+    <p class="caption e-caption"><em>Dos Santos, an up and coming Latinx band based in Chicago</em></p>
 
     <!-- Page Content -->
-    <div class="container">
+    <div class="container" id="c1">
       <h1>The Rise of Chicago's Latin DIY Music Scene</h1>
       <button class="btn-group-toggle" data-toggle="buttons" onclick="readEnglish()">
         <label class="btn btn-secondary active">
@@ -59,6 +60,9 @@
     </div> <!-- End Container -->
 
     <div class="parallax" id="placeholder">
+      <div class="parallaxRow">
+        <h1 class="parallaxCaption">Pachanga night, a weekly reggaeton event held in Logan Square</h1>
+      </div>
     </div>
 
     <div class="parallax" style="display:none">
@@ -88,10 +92,13 @@
       <!-- <video preload="preload" id="tatianaVideo">
       <source src="img/TatianaXicago.mov" type="video/mp4"></source>
       </video> -->
+      <div class="parallaxRow">
+        <h1 class="parallaxCaption">Tatiana Hazel, a first-generation Mexican indie-pop singer and fashion designer</h1>
+      </div>
     </div>
 
     <div class="container">
-      <h1>Meet the Artists</h1>
+      <h1 class="artist-intro">Meet the Artists</h1>
     </div>
 
       <div class="row text-center modalHolder">
@@ -133,6 +140,10 @@
           </div>
         </div>
       </div>
+      <div class="container" id="spotifyContainer">
+        <h1 class="artist-intro">Listen to Their Music</h1>
+        <iframe id="spotify-playlist" src="https://open.spotify.com/embed/user/annaclairewhite/playlist/5RxqBKZrzMZunujLy053lF" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      </div>
 
     <div class="modal" id="modal1">
       <div class="modal-content">
@@ -143,19 +154,22 @@
           <p>The music of Dos Santos, a chicago-based quintet,  fuses influences from Cumbia, Salsa, to classic rock and jazz. The group of five – Peter Vale, Alex Chavez, Daniel Villarreal-Carrillo, Jaime Garza and Nathan Karagianis – made their debut in May 2013, after lead vocalist Chavez moved to Chicago and found that there was a void of cumbia being performed.</p>
           <hr />
           <p>“In the beginning, it was based in Cumbia. It was a psychedelic and aggressive sound,” Vale, the percussionist of Dos Santos, said. “But then, I’d say that the evolution of the group is more open and is a different sound. I know that many people have tried to classify what type of music we play, but it’s not possible.”</p>
+          <hr />
           <p>Beyond blending a range of styles, the music Dos Santos creates is in Spanglish because that is the language that is most natural to them.</p>
           <p>“When Alex dropped the lyrics to ‘Return y Regreso,’ we didn’t even flinch to his lyrics and the fact that they were in English,” Vale said. “It was only when an interviewer pointed that out, which made me realize, ‘Woah that’s true! We have something in English!’ Other artists and bands are bilingual too. Down to the DJs who will play a Boogaloo song in English, it was an infectious Latin beat with English lyrics over the top. That kind of music is representative of Spanglish.” </p>
           <p>Vale insisted that both his accent and the Spanish language are part of his Latin identity, as well as the Latin identity of Dos Santos.</p>
           <p>“When I listen to ‘Hotel California’ from the Eagles, I am listening to them with Latino ears. When I hear something by Michael McDonald and want to do my own cover, it would have my own accent,” Vale said. “Being Latino, no matter what you do, is going to be perceived as having an accent. It’s about how well you’re going to embrace that. I embrace it fully. My music has an accent, and I am proud of that.”</p>
+          <img src="img/dossantos_quote.jpg" class="quote-img">
           <p>La música de Dos Santos, dijo Vale, es una mezcla de Rock, de Cumbia o sonido latinoamericano. </p>
           <p>"Con tiempo, tipo de Caribe, y de Afrobeat, es algo medio-oscuro y psicodélico, pero a la vez hay mucha consciencia. Eso es lo que es importante para nosotros: es que la música de nosotros diga algo y represente algo.”</p>
-          <hr/>
           <video width="100%" controls>
             <source src="img/DosSantos.MOV" type="video/mp4">
           Your browser does not support the video tag.
           </video>
+          <hr />
           <p>Dos Santos' music, said Vale, is a mix of Rock, Cumbia, or a Latin American sound.</p>
           <p>“Later on, some type of Caribbean and Afrobeat; it’s something half-dark and psychedelic, but at the same time it’s very conscientious. That’s something that’s important to us: that our music says something and represents something.”</p>
+          <hr />
           <p>Vale said that growing up, his mother owned an extensive vinyl collection, and he recalled listening to a lot of classic rock, like Michael McDonald and the Doobie Brothers, the Eagles and Kenny Loggins. Then there was also a lot of Salsa, like Frankie Ruiz.</p>
           <p>“My mom put on these records, so I didn’t have a choice in what we were listening to. But it definitely shaped what I enjoy listening to,” Vale said. “The older Salsa recordings from the 70s would come on. My mom would grab me, and we’d start dancing in the living room. When you listen to music and you associate it to some kind of moment, like dancing with mom, how can you not fall in love with that music?”</p>
         </div>
@@ -166,6 +180,7 @@
           <p>“Cuando Alex cantó las letras de ‘return y regreso,’ nunca nos echamos atrás a la hora del hecho de que las letras se impartieron en inglés,” dijo Vale. “Un entrevistador ha indicado el uso de Spanglish y solo no despertamos, ‘Esto es verdad! Tenemos algo de inglés!’ Otros artistas son bilingües también. Hay DJs que tocan música bugalú con letras en inglés. Esto es un ritmo latino infeccioso, y esto tipo de música es representativo de Spanglish.”</p>
           <p>Vale dijo que su acento es un gran parte de su latinidad, al igual que la latinidad de Dos Santos.</p>
           <p>“Cuando escucho a ‘Hotel California’ de the Eagles, estoy escuchando con orejas latinas. Cuando escucho algo de Michael McDonald y quiero hacer mi versión, tendría mi propio acento,” dijo Vale. “Para ser latino, hagamos lo que hagamos, será tener un acento. Se trata de cómo vas a abrazarlo. Yo lo abrazo totalmente. Mi música tiene un acento, y estoy orgulloso de ello.”</p>
+          <img src="img/dossantos_quote.jpg" class="quote-img">
           <p>Además del acento, la música de Dos Santos, dijo Vale, es una mezcla de Rock, Cumbia o sonido latinoamericano. </p>
           <p>“Con tiempo, tipo de Caribe, y de Afrobeat, es algo medio-oscuro y psicodélico, pero la ver mucho consciencia. Eso es lo que es importante para nosotros: es que la música de nosotros diga algo y represente algo.”</p>
           <video width="100%" controls>
@@ -187,6 +202,7 @@
           <p>“I was so embarrassed. I speak it fluently, so I was like, ‘What?’” said Hazel.</p>
           <p>From Missy Elliott to Slipknot, Hazel’s two older sisters exposed her to a diverse repertoire of American music at a young age. Despite not liking traditional Latin music her parents listened to, she was attracted to several indie-pop Mexican artists such as Carla Morrison, Julieta Venegas and Ximena Sariñana. These influences set the foundation for Hazel’s artistry. </p>
           <p>“I didn’t think it was possible for me to do things in Spanish. They showed me the best of both worlds.” Hazel said.</p>
+          <img src="img/tatiana_quote.jpg" class="quote-img">
           <p>Hazel’s first Spanish song, “Dímelo,” attracted one of the Latin Music Programmers at Apple Music, who messaged her on Instagram and had included her on several playlists. The following month, after playing a show in L.A,  Hazel performed her EP “Toxic” to the Apple Music staff. After performing her music, she was also introduced to the Indie music programmer, who also added Hazel to certain playlists.  </p>
           <p>The 21-year-old artist and fashion designer continues to make music in Spanish, English and Spanglish, despite her critics.  Her mixture of both languages pushes the boundaries of traditional music genres.  When it comes to her songwriting process, language choice is not made intentional. Instead, her language choice is just a reflection of living in two cultures, a process that comes naturally to Hazel.</p>
           <video width="100%" controls>
@@ -200,6 +216,7 @@
           <p>"Estaba tan avergonzado. Lo hablo con fluidez, así que dije "¿Qué?", ​​dijo Hazel.</p>
           <p>Desde Missy Elliott hasta Slipknot, las dos hermanas mayores de Hazel la expusieron a un repertorio diverso de música estadounidense a una edad temprana. A pesar de que no le gustaba la música latina tradicional que escuchaban sus padres, se sintió atraída por varios artistas indie-pop mexicanos como Carla Morrison, Julieta Venegas y Ximena Sariñana. Estas influencias establecen las bases para el arte de Hazel.</p>
           <p>“No pensé que me fuera posible hacer cosas en español. Me mostraron lo mejor de ambos mundos ," dijo Hazel.</p>
+          <img src="img/tatiana_quote.jpg" class="quote-img">
           <p>La primera canción en español de Hazel, "Dimelo", atrajo a uno de los programadores de música latina de Apple Music, quien le envió un mensaje a Instagram y la incluyó en varias listas de reproducción. El mes siguiente, después de tocar un concierto en L.A, Hazel tocó su EP "Toxic" para el personal de Apple Music. Después de presentar su música, también fue presentada al programador de música Indie, quien también agregó Hazel a ciertas listas de reproducción.</p>
           <p>A pesar de sus críticos, la mexicana de primera generación continúa haciendo música en español, inglés y spanglish. Su mezcla de ambos idiomas empuja los límites de los géneros musicales tradicionales. Cuando se trata de su proceso de composición de canciones, la elección del idioma no se hace intencionalmente. En cambio, su elección de idioma es solo un reflejo de vivir en dos culturas, un proceso que es natural en Hazel.</p>
           <video width="100%" controls>
@@ -219,6 +236,7 @@
           <p>Kaina Castillo, aka KAINA, grew up speaking Spanish, but like many first-generation children, she stopped feeling pressure from her parents to speak the language as she got older. Over time, she began to forget words.</p>
           <p>Though many of her young Latinx music peers write songs in both English and Spanish, Castillo does not feel she can express herself equally in both languages. </p>
           <p>“It almost feels like I’m appropriating something that is definitely already mine,” Castillo said of writing original music in Spanish, and instead favors incorporating Spanish covers into her live sets.</p>
+          <img src="img/kaina_quote.jpg" class="quote-img">
           <video width="100%" controls>
             <source src="img/KainaXicago.mov" type="video/mp4">
           Your browser does not support the video tag.
@@ -243,6 +261,7 @@
           <p>Kaina Castillo, alias KAINA, crecía hablando español, pero como muchos niños de primera generación, cuando ella se ponía mayor  sus padres dejaban de insistir que ella aprendiera la idioma y ella empezaba a olvidar palabras. </p>
           <p>Aunque muchas de sus compañeras jóvenes de música Latinx escriben canciones en inglés y español, Castillo no siente que puede expresarse lo mismo en ambos idiomas.</p>
           <p>“Casi siente como me estoy apropiando algo que es definitivamente ya la mía,” dice Castillo sobre escribiendo música original en español, y en vez favorece incorporando covers españolas en sus conciertos en vivo. </p>
+          <img src="img/kaina_quote.jpg" class="quote-img">
           <video width="100%"controls>
             <source src="img/KainaXicago.mov" type="video/mp4">
           Your browser does not support the video tag.
@@ -285,6 +304,7 @@
           <p>The increased attention directed towards Latinx artists gives them a platform and a voice, which could increase understanding of the Latinx community.</p>
           <p>As a first-generation Mexican living in the U.S., Cervantes said it is difficult to embrace his culture through language. When growing up around white friends, Cervantes was careful to never speak Spanish, scared of what they would think. However, as he grew older and began to embrace his Latin identity, he felt more confident exploring the language through music, incorporating lyrics in both Spanish and English into his more recent songs. </p>
           <p>“It has become easier for artists like me, Omar Apollo and Cuco to start singing in Spanish. We feel more comfortable in our own skin,” Cervantes says. “People are seeing this as a new era of music.”</p>
+          <img src="img/victor_quote.jpg" class="quote-img">
         </div>
         <div class="spanishDiv" id="s-victor">
           <p>Victor Cervantes, alias VICTOR!, compara su música a una manta gruesa.</p>
@@ -303,6 +323,7 @@
           <p>La atención aumentada dirigida hacia las artistas latinas les da un plataforma y una voz, el cual puede incrementar el entendimiento de la comunidad latina. </p>
           <p>Como un mexicano de la primera generación que vive en los EEUU, Cervantes dice que es difícil abrazar su cultura por el idioma. Se crió rodeado por amigos blancos, Cervantes tenía cuidado de nunca hablar el español por el miedo de lo que pensarían sus amigos. Sin embargo, cuando era mayor, empezó a abrazar su latinidad, y se sentía confidente explorando el idioma por la música, incorporando la letra en los dos español y inglés en canciones más recientes. </p>
           <p>“Ha llegado a ser más fácil empezar a cantar en español para artistas como yo, Omar Apollo y Cuco. Nos sentimos más cómodos en nuestra propia piel,” Cervantes dice. “A otras personas les parece que esta es una nueva época de música.”</p>
+          <img src="img/victor_quote.jpg" class="quote-img">
         </div>
       </div>
     </div>

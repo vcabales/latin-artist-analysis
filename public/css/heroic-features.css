@@ -24,6 +24,51 @@ body {
   text-align: center;
 }
 
+.caption {
+  padding-left: 10px;
+  margin-top: 5px;
+}
+
+.parallaxCaption {
+  background-color: #282828;
+  width: 80%;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  color: #DCDCDC;
+  font-family: 'Righteous', cursive;
+}
+
+.quote-img {
+  width: 100%;
+}
+
+#spotify-playlist {
+  /* margin-left: 10vw; */
+  width: 70vw;
+  height: 50vh;
+  margin-bottom: 10vh;
+  margin-top: 2vh;
+}
+
+#spotifyContainer {
+  margin-top: 5vh;
+}
+
+.artist-intro {
+  font-family: 'Righteous', cursive;
+}
+
+.parallaxRow {
+  padding-top: 5%;
+  padding-left: 5%;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+#c1 {
+  margin-top: 25px;
+}
+
 #chart {
   top: 0;
   left: 0;
@@ -89,7 +134,7 @@ body {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  margin-bottom: 25px;
+  /* margin-bottom: 25px; */
   width: 100%;
   height: 80vh;
 }
@@ -105,9 +150,6 @@ body {
   .modal-content {
     padding-left: 75px;
     padding-right: 75px;
-  }
-  .modal-content > h1 {
-    padding-top: 5%;
   }
 }
 
@@ -195,9 +237,6 @@ iPad 3
     padding-left: 40px;
     padding-right: 40px;
   }
-  .modal-content > h1 {
-    padding-top: 5%;
-  }
 }
 
 @media (max-width: 300px) {
@@ -219,9 +258,6 @@ iPad 3
   .modal-content {
     padding-left: 150px;
     padding-right: 150px;
-  }
-  .modal-content > h1 {
-    padding-top: 7%;
   }
 }
 
@@ -255,9 +291,6 @@ button {
   .modal-content {
     padding-left: 150px;
     padding-right: 150px;
-  }
-  .modal-content > h1 {
-    padding-top: 7%;
   }
 }
 
@@ -350,6 +383,12 @@ button {
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+audio {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 /* Modal Content/Box */

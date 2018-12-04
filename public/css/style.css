@@ -15,9 +15,14 @@ text {
 /* Styling for translations */
 .spanishDiv {
   display: none; /* Set display to none at the beginning */
+  padding: 20px;
 }
 
 #dos-santos {
   width: 100%;
   /* height: 10%; */
+}
+
+.englishDiv {
+  padding: 20px;
 }
