@@ -11,3 +11,8 @@ text {
 .dot-label text {
   font-size: 12px;
 }
+
+/* Styling for translations */
+.spanishDiv {
+  display: none; /* Set display to none at the beginning */
+}

@@ -25,10 +25,18 @@ body {
 }
 
 #chart {
-  height: 50vh;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+}
+
+#chartContainer {
+  position: absolute;
+  padding-top: 20vw;
 }
 
 .article-text {

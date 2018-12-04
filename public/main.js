@@ -142,6 +142,9 @@ function updateJSON(data, labelsX, vals, valLen) {
         var circleEnter = dots.enter()
 
         circleEnter.append('circle')
+            .attr('cy', 0)
+            .attr('cx', 0)
+            .attr('r', function(d){ return r(d) })
             // .attr('fill', function(d) {
             //   var i = Math.floor(count/24);
             //   console.log(Math.floor(count/24));
@@ -222,8 +225,9 @@ function updateJSON(data, labelsX, vals, valLen) {
             .attr('class','dot-label')
             .on('mouseover', function(d) {
                 var selection = d3.select(this);
-                selection.select('rect').transition().duration(100).style('opacity',1)
-                selection.select('text').transition().duration(100).style('opacity',1)
+                selection.select('rect').transition().duration(100).style('opacity',1);
+                selection.select('text').transition().duration(100).style('opacity',1);
+                // d3.select(this).style("cursor", "pointer");
             })
             .on('mouseout', function(d) {
                 var selection = d3.select(this);
